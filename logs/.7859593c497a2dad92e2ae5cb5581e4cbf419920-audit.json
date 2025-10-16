@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\logs\\.7859593c497a2dad92e2ae5cb5581e4cbf419920-audit.json",
+    "files": [
+        {
+            "date": 1760643925060,
+            "name": "C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\logs\\codecache-2025-10-17.log",
+            "hash": "9211033f2a411146a9ca75d98c1b8f29ef018cc25ae2bad27b0775ddfb767dbc"
+        }
+    ],
+    "hashType": "sha256"
+}
