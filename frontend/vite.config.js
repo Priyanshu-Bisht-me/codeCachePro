@@ -13,6 +13,10 @@ export default defineConfig({
         target: process.env.VITE_API_URL || 'http://localhost:5050',
         changeOrigin: true
       },
+      '/packet-stats': {
+        target: process.env.VITE_API_URL || 'http://localhost:5050',
+        changeOrigin: true
+      },
       '/packages': {
         target: process.env.VITE_API_URL || 'http://localhost:5050',
         changeOrigin: true

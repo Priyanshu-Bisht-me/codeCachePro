@@ -2270,3 +2270,113 @@
 {"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-16T23:11:35.481Z"}
 {"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-16T23:11:35.560Z"}
 {"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2025-10-16T23:16:05.181Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T00:59:59.426Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T00:59:59.438Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T00:59:59.440Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T00:59:59.467Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T00:59:59.468Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T00:59:59.468Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:25:25.831Z"}
+{"__augmented":true,"code":"SQLITE_ERROR","errno":1,"level":"error","message":"Error executing DB schema SQLITE_ERROR: no such column: registry","stack":"Error: SQLITE_ERROR: no such column: registry\n--> in Database#exec('-- /backend/src/db/schema.sql\\r\\n' +\n  '-- Purpose: Defines the database schema for CodeCache Pro.\\r\\n' +\n  '-- This script is executed on application startup to ensure tables exist.\\r\\n' +\n  '\\r\\n' +\n  'CREATE TABLE IF NOT EXISTS packages (\\r\\n' +\n  '    id INTEGER PRIMARY KEY AUTOINCREMENT,\\r\\n' +\n  '    name TEXT NOT NULL,\\r\\n' +\n  '    version TEXT NOT NULL,\\r\\n' +\n  '    file_path TEXT NOT NULL UNIQUE,\\r\\n' +\n  '    size_bytes INTEGER NOT NULL,\\r\\n' +\n  '    hits INTEGER DEFAULT 0,\\r\\n' +\n  '    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\\r\\n' +\n  '    last_accessed TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\\r\\n' +\n  '    checksum TEXT NOT NULL,\\r\\n' +\n  \"    registry TEXT DEFAULT 'npm',\\r\\n\" +\n  '    CONSTRAINT unq_package_version_registry UNIQUE (name, version, registry)\\r\\n' +\n  ');\\r\\n' +\n  '\\r\\n' +\n  'CREATE INDEX IF NOT EXISTS idx_packages_name ON packages (name);\\r\\n' +\n  'CREATE INDEX IF NOT EXISTS idx_packages_last_accessed ON packages (last_accessed);\\r\\n' +\n  'CREATE INDEX IF NOT EXISTS idx_packages_registry ON packages (registry);\\r\\n' +\n  '\\r\\n' +\n  'CREATE TABLE IF NOT EXISTS stats (\\r\\n' +\n  '    key TEXT PRIMARY KEY,\\r\\n' +\n  '    value INTEGER NOT NULL\\r\\n' +\n  ');\\r\\n' +\n  '\\r\\n' +\n  '-- Initialize stats if not present\\r\\n' +\n  \"INSERT INTO stats (key, value) VALUES ('hits', 0) ON CONFLICT(key) DO NOTHING;\\r\\n\" +\n  \"INSERT INTO stats (key, value) VALUES ('misses', 0) ON CONFLICT(key) DO NOTHING;\\r\\n\" +\n  \"INSERT INTO stats (key, value) VALUES ('bandwidthSaved', 0) ON CONFLICT(key) DO NOTHING;\\r\\n\" +\n  '\\r\\n' +\n  \"-- Migration: Add registry column to existing packages if it doesn't exist\\r\\n\" +\n  '-- This handles upgrading from older versions\\r\\n' +\n  \"ALTER TABLE packages ADD COLUMN registry TEXT DEFAULT 'npm';\\r\\n\" +\n  '\\r\\n' +\n  \"-- Update existing packages to have npm registry if they don't have one set\\r\\n\" +\n  \"UPDATE packages SET registry = 'npm' WHERE registry IS NULL;\", [Function (anonymous)])\n    at C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\backend\\src\\db\\database.js:34:12\n    at new Promise (<anonymous>)\n    at Object.initDb (C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\backend\\src\\db\\database.js:33:12)\n    at async startServer (C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\backend\\src\\server.js:14:9)","timestamp":"2025-10-17T01:25:25.856Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T01:28:44.630Z"}
+{"level":"info","message":"[MISS] types-registry@0.1.742. Fetching from upstream.","timestamp":"2025-10-17T01:28:44.636Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T01:28:44.707Z"}
+{"level":"info","message":"[CACHE] Successfully cached types-registry@0.1.742 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\types-registry\\types-registry-0.1.742.tgz","timestamp":"2025-10-17T01:28:53.266Z"}
+{"level":"info","message":"[HIT] types-registry@0.1.742 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\types-registry\\types-registry-0.1.742.tgz","timestamp":"2025-10-17T01:28:53.295Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:29:27.426Z"}
+{"level":"info","message":"Adding registry column to packages table...","timestamp":"2025-10-17T01:29:27.442Z"}
+{"level":"info","message":"Registry column migration completed successfully.","timestamp":"2025-10-17T01:29:27.488Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:29:39.665Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T01:29:39.674Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T01:29:39.675Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T01:29:39.677Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T01:29:39.697Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T01:29:39.698Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T01:29:39.700Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T01:29:39.700Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:39:46.718Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T01:39:46.729Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T01:39:46.730Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T01:39:46.730Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T01:39:46.758Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T01:39:46.759Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T01:39:46.759Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T01:39:46.759Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/requests/ -> requests/","timestamp":"2025-10-17T01:40:28.738Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: requests/","timestamp":"2025-10-17T01:40:28.740Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/requests/","timestamp":"2025-10-17T01:40:28.741Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/requests/ -> requests/","timestamp":"2025-10-17T01:40:43.726Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: requests/","timestamp":"2025-10-17T01:40:43.727Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/requests/","timestamp":"2025-10-17T01:40:43.727Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2025-10-17T01:44:03.243Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:44:07.723Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T01:44:07.734Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T01:44:07.736Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T01:44:07.737Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T01:44:07.764Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T01:44:07.771Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T01:44:07.772Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T01:44:07.773Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:48:26.397Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T01:48:26.409Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T01:48:26.410Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T01:48:26.412Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T01:48:26.435Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T01:48:26.436Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T01:48:26.436Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T01:48:26.437Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi -> ","timestamp":"2025-10-17T01:48:44.203Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: ","timestamp":"2025-10-17T01:48:44.205Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/requests/ -> requests/","timestamp":"2025-10-17T01:49:27.415Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: requests/","timestamp":"2025-10-17T01:49:27.416Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/requests/","timestamp":"2025-10-17T01:49:27.417Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for requests/","timestamp":"2025-10-17T01:49:27.901Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/charset-normalizer/ -> charset-normalizer/","timestamp":"2025-10-17T01:49:28.923Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: charset-normalizer/","timestamp":"2025-10-17T01:49:28.924Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/charset-normalizer/","timestamp":"2025-10-17T01:49:28.925Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for charset-normalizer/","timestamp":"2025-10-17T01:49:29.112Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/idna/ -> idna/","timestamp":"2025-10-17T01:49:54.650Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: idna/","timestamp":"2025-10-17T01:49:54.652Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/idna/","timestamp":"2025-10-17T01:49:54.655Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for idna/","timestamp":"2025-10-17T01:49:54.742Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/urllib3/ -> urllib3/","timestamp":"2025-10-17T01:49:54.985Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: urllib3/","timestamp":"2025-10-17T01:49:54.986Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/urllib3/","timestamp":"2025-10-17T01:49:54.987Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for urllib3/","timestamp":"2025-10-17T01:49:56.329Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/certifi/ -> certifi/","timestamp":"2025-10-17T01:49:56.653Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: certifi/","timestamp":"2025-10-17T01:49:56.654Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/certifi/","timestamp":"2025-10-17T01:49:56.654Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for certifi/","timestamp":"2025-10-17T01:49:56.992Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pip/ -> pip/","timestamp":"2025-10-17T01:50:05.567Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: pip/","timestamp":"2025-10-17T01:50:05.568Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pip/","timestamp":"2025-10-17T01:50:05.569Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pip/","timestamp":"2025-10-17T01:50:05.926Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/numpy/ -> numpy/","timestamp":"2025-10-17T01:53:01.807Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: numpy/","timestamp":"2025-10-17T01:53:01.808Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/numpy/","timestamp":"2025-10-17T01:53:01.808Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for numpy/","timestamp":"2025-10-17T01:53:02.242Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/numpy/ -> numpy/","timestamp":"2025-10-17T01:54:48.961Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: numpy/","timestamp":"2025-10-17T01:54:48.962Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/numpy/","timestamp":"2025-10-17T01:54:48.963Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for numpy/","timestamp":"2025-10-17T01:54:53.071Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2025-10-17T01:55:31.700Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T01:55:34.894Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T01:55:34.905Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T01:55:34.906Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T01:55:34.907Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T01:55:34.946Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T01:55:34.947Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T01:55:34.948Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T01:55:34.948Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/numpy/ -> numpy/","timestamp":"2025-10-17T01:55:49.561Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: numpy/","timestamp":"2025-10-17T01:55:49.564Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/numpy/","timestamp":"2025-10-17T01:55:49.568Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for numpy/, size: 1724345 chars","timestamp":"2025-10-17T01:55:52.967Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/numpy/ -> numpy/","timestamp":"2025-10-17T01:58:08.000Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: numpy/","timestamp":"2025-10-17T01:58:08.002Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/numpy/","timestamp":"2025-10-17T01:58:08.003Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for numpy/, size: 1724345 chars","timestamp":"2025-10-17T01:58:14.564Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/six/ -> six/","timestamp":"2025-10-17T01:59:12.239Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: six/","timestamp":"2025-10-17T01:59:12.241Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/six/","timestamp":"2025-10-17T01:59:12.242Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for six/, size: 16337 chars","timestamp":"2025-10-17T01:59:12.316Z"}

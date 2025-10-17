@@ -7,6 +7,7 @@ const config = require('../config');
 const logger = require('./middleware/logger');
 const db = require('./db/database');
 const { startPruningInterval } = require('./cache/pruning');
+const consoleStats = require('./utils/consoleStats');
 
 const startServer = async () => {
     try {
@@ -37,6 +38,13 @@ const startServer = async () => {
             logger.info(`🚀 CodeCache Pro server running on http://0.0.0.0:${config.port}`);
             logger.info(`🌐 Access from other devices: http://${localIP}:${config.port}`);
             logger.info(`📋 Configure npm clients with: npm config set registry http://${localIP}:${config.port}/npm`);
+            logger.info(`🐍 Configure pip clients with: pip config set global.index-url http://${localIP}:${config.port}/pypi`);
+            
+            // Display startup banner and stats
+            consoleStats.displayStartupBanner();
+            
+            // Start periodic stats display
+            consoleStats.displayPeriodicStats();
         });
 
         // Handle server errors

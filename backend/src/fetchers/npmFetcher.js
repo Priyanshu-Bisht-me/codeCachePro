@@ -41,7 +41,14 @@ async function handleNpmRequest(req, res, next) {
 
     try {
         recordConcurrency(1); // Increment concurrency
-        const cacheEntry = await db.get('SELECT * FROM packages WHERE name = ? AND version = ?', [name, version]);
+        // Try with registry column first, fallback to without for backward compatibility
+        let cacheEntry;
+        try {
+            cacheEntry = await db.get('SELECT * FROM packages WHERE name = ? AND version = ? AND (registry = ? OR registry IS NULL)', [name, version, 'npm']);
+        } catch (error) {
+            // Fallback for databases without registry column
+            cacheEntry = await db.get('SELECT * FROM packages WHERE name = ? AND version = ?', [name, version]);
+        }
 
         if (cacheEntry) { // Cache HIT
             logger.info(`[HIT] ${packageIdentifier} from ${cacheEntry.file_path}`);
@@ -157,13 +164,24 @@ async function fetchAndCachePackage(name, version, urlPath) {
             const stats = await fsp.stat(finalPath);
             const sizeBytes = stats.size;
 
-            await db.serializedRun(
-                'INSERT INTO packages (name, version, file_path, size_bytes, checksum) VALUES (?, ?, ?, ?, ?)',
-                [name, version, finalPath, sizeBytes, downloadedChecksum]
-            ).catch(err => {
-                logger.error(`Error inserting package ${name}@${version} into database:`, err);
-                // Don't throw here, the file is cached even if DB insert fails
-            });
+            // Try to insert with registry column, fallback without for backward compatibility
+            try {
+                await db.serializedRun(
+                    'INSERT INTO packages (name, version, file_path, size_bytes, checksum, registry) VALUES (?, ?, ?, ?, ?, ?)',
+                    [name, version, finalPath, sizeBytes, downloadedChecksum, 'npm']
+                );
+            } catch (err) {
+                // Fallback for databases without registry column
+                try {
+                    await db.serializedRun(
+                        'INSERT INTO packages (name, version, file_path, size_bytes, checksum) VALUES (?, ?, ?, ?, ?)',
+                        [name, version, finalPath, sizeBytes, downloadedChecksum]
+                    );
+                } catch (fallbackErr) {
+                    logger.error(`Error inserting package ${name}@${version} into database:`, fallbackErr);
+                    // Don't throw here, the file is cached even if DB insert fails
+                }
+            }
             logger.info(`[CACHE] Successfully cached ${name}@${version} to ${finalPath}`);
             return; // Success, exit retry loop
         } catch (error) {

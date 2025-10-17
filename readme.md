@@ -6,16 +6,18 @@
 
 ## Features ✨
 
+-   **Multi-Registry Support**: Full support for both npm (Node.js) and PyPI (Python) package registries.
 -   **High-Performance Proxy**: Built with Node.js and Express, using streams for memory-efficient handling of large packages.
--   **High Concurrency**: Tested to support 50+ simultaneous downloads.
--   **Persistent Metadata**: Uses SQLite for fast lookups and metadata storage.
--   **Atomic & Verified Caching**: Guarantees downloads are complete and checksum-verified before being cached.
+-   **High Concurrency**: Tested to support 50+ simultaneous downloads across both registries.
+-   **Persistent Metadata**: Uses SQLite for fast lookups and metadata storage with registry separation.
+-   **Atomic & Verified Caching**: Guarantees downloads are complete and checksum-verified before being cached (SHA1 for npm, SHA256 for PyPI).
 -   **Automatic Cache Pruning**: Uses an LRU (Least Recently Used) strategy to keep cache size below a configurable limit (default 5 GB).
--   **Real-time Dashboard**: A React-based web UI to monitor statistics and view cached packages.
+-   **Real-time Dashboard**: A React-based web UI to monitor statistics and view cached packages with manual refresh capability.
+-   **Console Statistics**: Real-time command-line statistics showing bandwidth saved, time saved, and cache performance as clients make requests.
 -   **Full-featured CLI**: A powerful command-line tool to manage the server.
 -   **Windows Service**: Includes PowerShell scripts to easily install, run, and manage the server as a background Windows service.
 -   **Robust Logging**: Daily rotating logs for easy diagnostics.
--   **Extensible**: Designed to be easily extended for other repositories like PyPI or Maven.
+-   **Registry Analytics**: Separate tracking and analytics for npm and PyPI usage patterns.
 
 ---
 
@@ -65,3 +67,99 @@ To use the cache, configure your `npm` clients (developer machines, CI runners) 
 ```powershell
 # Replace <server_ip> with the IP address of the machine running CodeCache Pro
 npm config set registry http://<server_ip>:5050/npm
+### Confi
+guring Clients (pip)
+
+To use the PyPI cache, configure your `pip` clients (developer machines, CI runners) to point to the CodeCache Pro server:
+
+**Windows/macOS/Linux:**
+```bash
+# Configure pip to use the cache server
+pip config set global.index-url http://192.168.137.47:5050/pypi
+
+# Verify the configuration
+pip config list
+
+# To revert to the default PyPI registry
+pip config unset global.index-url
+```
+
+**Alternative method using pip.conf/pip.ini:**
+
+Create or edit the pip configuration file:
+- **Linux/macOS**: `~/.pip/pip.conf`
+- **Windows**: `%APPDATA%\pip\pip.ini`
+
+Add the following content:
+```ini
+[global]
+index-url = http://192.168.137.47:5050/pypi
+```
+
+**For CI/CD environments:**
+```bash
+# Use environment variable
+export PIP_INDEX_URL=http://192.168.137.47:5050/pypi
+
+# Or use command line flag
+pip install --index-url http://192.168.137.47:5050/pypi package_name
+```
+---
+
+
+## 🐍 PyPI Support
+
+CodeCache Pro now includes full support for Python Package Index (PyPI) caching alongside npm packages.
+
+### How PyPI Caching Works
+
+1. **Package Index Requests**: When pip requests a package index (e.g., `/pypi/requests/`), the server proxies the request to the official PyPI simple index.
+
+2. **Package Downloads**: When pip downloads a package file (`.whl` or `.tar.gz`), the server:
+   - Checks the local cache first
+   - If cached, serves immediately (cache HIT)
+   - If not cached, downloads from PyPI, verifies SHA256 checksum, and caches locally (cache MISS)
+
+3. **Checksum Verification**: All PyPI packages are verified using SHA256 checksums extracted from the PyPI index URLs.
+
+4. **Atomic Caching**: Downloads are written to temporary files and atomically renamed only after successful verification.
+
+### Supported Package Types
+
+- **Wheel files** (`.whl`): Binary distribution format
+- **Source distributions** (`.tar.gz`): Source code archives
+- **All Python versions**: py2, py3, cp38, cp39, cp310, etc.
+- **All architectures**: any, win32, win_amd64, linux_x86_64, etc.
+
+### Testing PyPI Cache
+
+Use the included test script to verify PyPI functionality:
+
+```bash
+cd backend
+node test-pypi-cache.js
+```
+
+Or test with real pip commands:
+
+```bash
+# Configure pip to use the cache
+pip config set global.index-url http://192.168.137.47:5050/pypi
+
+# Install a package (will be cached)
+pip install requests
+
+# Install again (will be served from cache)
+pip install --force-reinstall requests
+```
+
+### Registry Separation
+
+- npm packages are stored in `./cache/<package-name>/`
+- PyPI packages are stored in `./cache/pypi/<package-name>/`
+- Database tracks packages separately by registry type
+- Statistics show breakdown by registry (npm vs PyPI)
+
+---
+
+## 🔧 Management
