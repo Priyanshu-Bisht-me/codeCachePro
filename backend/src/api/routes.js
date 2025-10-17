@@ -10,6 +10,31 @@ const logger = require('../middleware/logger');
 
 const router = express.Router();
 
+// Root endpoint - Dashboard info
+router.get('/', (req, res) => {
+    res.status(200).json({
+        message: 'CodeCache Pro - Multi-Registry Package Cache Server',
+        version: '1.0.0',
+        status: 'ok',
+        timestamp: new Date().toISOString(),
+        registries: {
+            npm: 'http://192.168.137.47:5050/npm',
+            pypi: 'http://192.168.137.47:5050/pypi'
+        },
+        endpoints: {
+            health: '/health',
+            stats: '/stats',
+            'packet-stats': '/packet-stats',
+            packages: '/packages',
+            'clear-cache': '/clear-cache (POST)'
+        },
+        configuration: {
+            npm: 'npm config set registry http://192.168.137.47:5050/npm',
+            pip: 'pip config set global.index-url http://192.168.137.47:5050/pypi && pip config set global.trusted-host 192.168.137.47'
+        }
+    });
+});
+
 // Health check endpoint
 router.get('/health', (req, res) => {
     res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
@@ -26,7 +51,7 @@ router.all('/pypi/*', (req, res) => {
 
 // NPM registry root endpoint
 router.get('/npm', (req, res) => {
-    res.status(200).json({ 
+    res.status(200).json({
         message: 'CodeCache Pro NPM Registry Proxy',
         status: 'ok',
         timestamp: new Date().toISOString(),
@@ -76,7 +101,7 @@ router.post('/clear-cache', async (req, res, next) => {
 router.get('/packet-stats', async (req, res, next) => {
     try {
         const stats = await getCacheStats();
-        
+
         // Get recent activity (last 24 hours)
         const recentActivity = await db.all(`
             SELECT 

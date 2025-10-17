@@ -2380,3 +2380,157 @@
 {"level":"info","message":"[PYPI METADATA] Proxying metadata request for: six/","timestamp":"2025-10-17T01:59:12.241Z"}
 {"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/six/","timestamp":"2025-10-17T01:59:12.242Z"}
 {"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for six/, size: 16337 chars","timestamp":"2025-10-17T01:59:12.316Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T02:21:25.878Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T02:21:25.893Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T02:21:25.894Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T02:21:25.895Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T02:21:25.922Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T02:21:25.925Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T02:21:25.926Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T02:21:25.927Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi -> \"\"","timestamp":"2025-10-17T02:23:34.369Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"\"","timestamp":"2025-10-17T02:23:34.370Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"\"","timestamp":"2025-10-17T02:23:34.370Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/upl/ -> \"upl/\"","timestamp":"2025-10-17T02:24:29.187Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"upl/\"","timestamp":"2025-10-17T02:24:29.189Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"upl/\"","timestamp":"2025-10-17T02:24:29.189Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/upl/","timestamp":"2025-10-17T02:24:29.190Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for upl/, size: 502 chars","timestamp":"2025-10-17T02:24:29.970Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/setuptools/ -> \"setuptools/\"","timestamp":"2025-10-17T02:24:33.592Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"setuptools/\"","timestamp":"2025-10-17T02:24:33.593Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"setuptools/\"","timestamp":"2025-10-17T02:24:33.594Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/setuptools/","timestamp":"2025-10-17T02:24:33.594Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for setuptools/, size: 528715 chars","timestamp":"2025-10-17T02:24:33.758Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T02:35:03.792Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T02:35:04.022Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T02:39:39.181Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T02:39:39.194Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T02:39:39.194Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T02:39:39.197Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T02:39:39.219Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T02:39:39.220Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T02:39:39.221Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T02:39:39.221Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T02:42:59.798Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T02:42:59.891Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T02:43:29.983Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T02:43:30.039Z"}
+{"level":"info","message":"[MISS] meow@14.0.0. Fetching from upstream.","timestamp":"2025-10-17T02:43:30.904Z"}
+{"level":"info","message":"[CACHE] Successfully cached meow@14.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\meow\\meow-14.0.0.tgz","timestamp":"2025-10-17T02:43:31.219Z"}
+{"level":"info","message":"[HIT] meow@14.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\meow\\meow-14.0.0.tgz","timestamp":"2025-10-17T02:43:31.429Z"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","timestamp":"2025-10-17T02:53:47.333Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T02:53:53.935Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T02:53:53.956Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T02:53:53.957Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T02:53:53.961Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T02:53:53.992Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T02:53:53.993Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T02:53:53.994Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T02:53:53.994Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T02:57:37.831Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T02:57:39.144Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T03:11:49.607Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T03:11:49.647Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T03:12:25.200Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T03:12:25.213Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T03:12:25.214Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T03:12:25.215Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T03:12:25.236Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.47:5050","timestamp":"2025-10-17T03:12:25.237Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.47:5050/npm","timestamp":"2025-10-17T03:12:25.237Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.47:5050/pypi","timestamp":"2025-10-17T03:12:25.238Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T03:15:02.537Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T03:15:03.308Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T03:15:56.070Z"}
+{"level":"info","message":"[MISS] is-fullwidth-code-point@3.0.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.084Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T03:15:56.107Z"}
+{"level":"info","message":"[MISS] strip-ansi@7.1.2. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.133Z"}
+{"level":"info","message":"[MISS] get-east-asian-width@1.4.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.140Z"}
+{"level":"info","message":"[MISS] widest-line@5.0.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.143Z"}
+{"level":"info","message":"[MISS] string-width@7.2.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.149Z"}
+{"level":"info","message":"[MISS] cli-boxes@3.0.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.154Z"}
+{"level":"info","message":"[MISS] emoji-regex@10.6.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.158Z"}
+{"level":"info","message":"[MISS] camelcase@8.0.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.163Z"}
+{"level":"info","message":"[MISS] boxen@8.0.1. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.168Z"}
+{"level":"info","message":"[MISS] ansi-align@3.0.1. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.173Z"}
+{"level":"info","message":"[MISS] ansi-regex@6.2.2. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.181Z"}
+{"level":"info","message":"[MISS] ansi-styles@6.2.3. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.185Z"}
+{"level":"info","message":"[MISS] wrap-ansi@9.0.2. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.189Z"}
+{"level":"info","message":"[MISS] type-fest@4.41.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.196Z"}
+{"level":"info","message":"[MISS] ansi-regex@5.0.1. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.206Z"}
+{"level":"info","message":"[CACHE] Successfully cached is-fullwidth-code-point@3.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\is-fullwidth-code-point\\is-fullwidth-code-point-3.0.0.tgz","timestamp":"2025-10-17T03:15:56.355Z"}
+{"level":"info","message":"[MISS] strip-ansi@6.0.1. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.367Z"}
+{"level":"info","message":"[CACHE] Successfully cached ansi-regex@5.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-regex\\ansi-regex-5.0.1.tgz","timestamp":"2025-10-17T03:15:56.413Z"}
+{"level":"info","message":"[CACHE] Successfully cached get-east-asian-width@1.4.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\get-east-asian-width\\get-east-asian-width-1.4.0.tgz","timestamp":"2025-10-17T03:15:56.429Z"}
+{"level":"info","message":"[CACHE] Successfully cached ansi-styles@6.2.3 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-styles\\ansi-styles-6.2.3.tgz","timestamp":"2025-10-17T03:15:56.438Z"}
+{"level":"info","message":"[CACHE] Successfully cached strip-ansi@7.1.2 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\strip-ansi\\strip-ansi-7.1.2.tgz","timestamp":"2025-10-17T03:15:56.446Z"}
+{"level":"info","message":"[CACHE] Successfully cached widest-line@5.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\widest-line\\widest-line-5.0.0.tgz","timestamp":"2025-10-17T03:15:56.459Z"}
+{"level":"info","message":"[CACHE] Successfully cached boxen@8.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\boxen\\boxen-8.0.1.tgz","timestamp":"2025-10-17T03:15:56.473Z"}
+{"level":"info","message":"[CACHE] Successfully cached camelcase@8.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\camelcase\\camelcase-8.0.0.tgz","timestamp":"2025-10-17T03:15:56.483Z"}
+{"level":"info","message":"[CACHE] Successfully cached strip-ansi@6.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\strip-ansi\\strip-ansi-6.0.1.tgz","timestamp":"2025-10-17T03:15:56.519Z"}
+{"level":"info","message":"[MISS] emoji-regex@8.0.0. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.633Z"}
+{"level":"info","message":"[MISS] string-width@4.2.3. Fetching from upstream.","timestamp":"2025-10-17T03:15:56.636Z"}
+{"level":"info","message":"[HIT] is-fullwidth-code-point@3.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\is-fullwidth-code-point\\is-fullwidth-code-point-3.0.0.tgz","timestamp":"2025-10-17T03:15:56.638Z"}
+{"level":"info","message":"[HIT] camelcase@8.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\camelcase\\camelcase-8.0.0.tgz","timestamp":"2025-10-17T03:15:56.682Z"}
+{"level":"info","message":"[HIT] strip-ansi@6.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\strip-ansi\\strip-ansi-6.0.1.tgz","timestamp":"2025-10-17T03:15:56.683Z"}
+{"level":"info","message":"[HIT] ansi-regex@5.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-regex\\ansi-regex-5.0.1.tgz","timestamp":"2025-10-17T03:15:56.685Z"}
+{"level":"info","message":"[HIT] get-east-asian-width@1.4.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\get-east-asian-width\\get-east-asian-width-1.4.0.tgz","timestamp":"2025-10-17T03:15:56.686Z"}
+{"level":"info","message":"[HIT] widest-line@5.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\widest-line\\widest-line-5.0.0.tgz","timestamp":"2025-10-17T03:15:56.687Z"}
+{"level":"info","message":"[HIT] ansi-styles@6.2.3 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-styles\\ansi-styles-6.2.3.tgz","timestamp":"2025-10-17T03:15:56.814Z"}
+{"level":"info","message":"[HIT] strip-ansi@7.1.2 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\strip-ansi\\strip-ansi-7.1.2.tgz","timestamp":"2025-10-17T03:15:56.817Z"}
+{"level":"info","message":"[CACHE] Successfully cached ansi-regex@6.2.2 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-regex\\ansi-regex-6.2.2.tgz","timestamp":"2025-10-17T03:15:56.835Z"}
+{"level":"info","message":"[HIT] boxen@8.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\boxen\\boxen-8.0.1.tgz","timestamp":"2025-10-17T03:15:56.838Z"}
+{"level":"info","message":"[CACHE] Successfully cached cli-boxes@3.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\cli-boxes\\cli-boxes-3.0.0.tgz","timestamp":"2025-10-17T03:15:56.845Z"}
+{"level":"info","message":"[CACHE] Successfully cached emoji-regex@10.6.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\emoji-regex\\emoji-regex-10.6.0.tgz","timestamp":"2025-10-17T03:15:56.852Z"}
+{"level":"info","message":"[CACHE] Successfully cached string-width@4.2.3 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\string-width\\string-width-4.2.3.tgz","timestamp":"2025-10-17T03:15:56.950Z"}
+{"level":"info","message":"[CACHE] Successfully cached emoji-regex@8.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\emoji-regex\\emoji-regex-8.0.0.tgz","timestamp":"2025-10-17T03:15:56.956Z"}
+{"level":"info","message":"[HIT] ansi-regex@6.2.2 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-regex\\ansi-regex-6.2.2.tgz","timestamp":"2025-10-17T03:15:56.982Z"}
+{"level":"info","message":"[HIT] string-width@4.2.3 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\string-width\\string-width-4.2.3.tgz","timestamp":"2025-10-17T03:15:56.984Z"}
+{"level":"info","message":"[HIT] emoji-regex@8.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\emoji-regex\\emoji-regex-8.0.0.tgz","timestamp":"2025-10-17T03:15:57.021Z"}
+{"level":"info","message":"[HIT] cli-boxes@3.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\cli-boxes\\cli-boxes-3.0.0.tgz","timestamp":"2025-10-17T03:15:57.023Z"}
+{"level":"info","message":"[HIT] emoji-regex@10.6.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\emoji-regex\\emoji-regex-10.6.0.tgz","timestamp":"2025-10-17T03:15:57.024Z"}
+{"level":"info","message":"[CACHE] Successfully cached wrap-ansi@9.0.2 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\wrap-ansi\\wrap-ansi-9.0.2.tgz","timestamp":"2025-10-17T03:15:57.070Z"}
+{"level":"info","message":"[CACHE] Successfully cached ansi-align@3.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-align\\ansi-align-3.0.1.tgz","timestamp":"2025-10-17T03:15:57.074Z"}
+{"level":"info","message":"[HIT] wrap-ansi@9.0.2 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\wrap-ansi\\wrap-ansi-9.0.2.tgz","timestamp":"2025-10-17T03:15:57.081Z"}
+{"level":"info","message":"[HIT] ansi-align@3.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\ansi-align\\ansi-align-3.0.1.tgz","timestamp":"2025-10-17T03:15:57.088Z"}
+{"level":"info","message":"[CACHE] Successfully cached string-width@7.2.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\string-width\\string-width-7.2.0.tgz","timestamp":"2025-10-17T03:15:57.163Z"}
+{"level":"info","message":"[HIT] string-width@7.2.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\string-width\\string-width-7.2.0.tgz","timestamp":"2025-10-17T03:15:57.731Z"}
+{"level":"info","message":"[CACHE] Successfully cached type-fest@4.41.0 to C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\type-fest\\type-fest-4.41.0.tgz","timestamp":"2025-10-17T03:15:57.864Z"}
+{"level":"info","message":"[HIT] type-fest@4.41.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\type-fest\\type-fest-4.41.0.tgz","timestamp":"2025-10-17T03:15:58.013Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T04:01:41.620Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T04:01:41.633Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T04:01:41.633Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T04:01:41.634Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T04:01:41.658Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.27:5050","timestamp":"2025-10-17T04:01:41.659Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.27:5050/npm","timestamp":"2025-10-17T04:01:41.659Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.27:5050/pypi","timestamp":"2025-10-17T04:01:41.660Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T04:05:26.171Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T04:05:26.181Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T04:05:26.182Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T04:05:26.184Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T04:05:26.205Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.137.27:5050","timestamp":"2025-10-17T04:05:26.206Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.137.27:5050/npm","timestamp":"2025-10-17T04:05:26.206Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.137.27:5050/pypi","timestamp":"2025-10-17T04:05:26.206Z"}
+{"level":"info","message":"[HIT] meow@14.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\Copy\\cache\\meow\\meow-14.0.0.tgz","timestamp":"2025-10-17T04:08:17.693Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:09:23.472Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:09:24.999Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:09:48.067Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:09:51.736Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:11:34.324Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:11:34.445Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:13:23.718Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:13:25.151Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:13:41.711Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:13:42.372Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:13:50.324Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:13:50.379Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:14:34.687Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:14:37.934Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:15:03.285Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:15:07.058Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:15:22.628Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:15:22.783Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:15:34.257Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:15:34.292Z"}
