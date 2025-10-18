@@ -35,23 +35,22 @@ function App() {
       // Show demo data when API is not available (like on GitHub Pages)
       console.log('API not available, showing demo data');
       setStats({
-        totalPackages: 156,
-        totalSize: '2.3 GB',
-        cacheHits: 1247,
-        cacheMisses: 89,
-        hitRate: '93.3%',
-        bandwidthSaved: '45.2 GB',
-        timeSaved: '2h 34m',
+        hits: 1247,
+        misses: 89,
+        bandwidthSaved: 48318382080, // 45.2 GB in bytes
+        cacheSizeBytes: 2469606195, // 2.3 GB in bytes
+        cacheSizeLimitBytes: 5368709120, // 5 GB in bytes
+        numPackages: 156,
         npmPackages: 98,
         pypiPackages: 58,
         lastUpdated: new Date().toISOString()
       });
       setPackages([
-        { name: 'react', version: '18.2.0', size: '87.2 MB', downloads: 45, registry: 'npm', lastAccessed: '2 minutes ago' },
-        { name: 'lodash', version: '4.17.21', size: '1.4 MB', downloads: 23, registry: 'npm', lastAccessed: '5 minutes ago' },
-        { name: 'requests', version: '2.31.0', size: '512 KB', downloads: 18, registry: 'pypi', lastAccessed: '8 minutes ago' },
-        { name: 'express', version: '4.18.2', size: '2.1 MB', downloads: 12, registry: 'npm', lastAccessed: '12 minutes ago' },
-        { name: 'numpy', version: '1.24.3', size: '15.8 MB', downloads: 9, registry: 'pypi', lastAccessed: '15 minutes ago' }
+        { id: 1, name: 'react', version: '18.2.0', size_bytes: 91389952, hits: 45, registry: 'npm', last_accessed: new Date(Date.now() - 2*60*1000).toISOString() },
+        { id: 2, name: 'lodash', version: '4.17.21', size_bytes: 1468006, hits: 23, registry: 'npm', last_accessed: new Date(Date.now() - 5*60*1000).toISOString() },
+        { id: 3, name: 'requests', version: '2.31.0', size_bytes: 524288, hits: 18, registry: 'pypi', last_accessed: new Date(Date.now() - 8*60*1000).toISOString() },
+        { id: 4, name: 'express', version: '4.18.2', size_bytes: 2202009, hits: 12, registry: 'npm', last_accessed: new Date(Date.now() - 12*60*1000).toISOString() },
+        { id: 5, name: 'numpy', version: '1.24.3', size_bytes: 16777216, hits: 9, registry: 'pypi', last_accessed: new Date(Date.now() - 15*60*1000).toISOString() }
       ]);
       setError('🌐 Demo Mode: Showing sample data (Backend not connected)');
     } finally {
