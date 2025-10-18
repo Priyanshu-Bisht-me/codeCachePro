@@ -32,8 +32,28 @@ function App() {
       setPackages(packagesData);
       setError(null);
     } catch (e) {
-      setError('Failed to fetch data from the server. Is it running?');
-      console.error(e);
+      // Show demo data when API is not available (like on GitHub Pages)
+      console.log('API not available, showing demo data');
+      setStats({
+        totalPackages: 156,
+        totalSize: '2.3 GB',
+        cacheHits: 1247,
+        cacheMisses: 89,
+        hitRate: '93.3%',
+        bandwidthSaved: '45.2 GB',
+        timeSaved: '2h 34m',
+        npmPackages: 98,
+        pypiPackages: 58,
+        lastUpdated: new Date().toISOString()
+      });
+      setPackages([
+        { name: 'react', version: '18.2.0', size: '87.2 MB', downloads: 45, registry: 'npm', lastAccessed: '2 minutes ago' },
+        { name: 'lodash', version: '4.17.21', size: '1.4 MB', downloads: 23, registry: 'npm', lastAccessed: '5 minutes ago' },
+        { name: 'requests', version: '2.31.0', size: '512 KB', downloads: 18, registry: 'pypi', lastAccessed: '8 minutes ago' },
+        { name: 'express', version: '4.18.2', size: '2.1 MB', downloads: 12, registry: 'npm', lastAccessed: '12 minutes ago' },
+        { name: 'numpy', version: '1.24.3', size: '15.8 MB', downloads: 9, registry: 'pypi', lastAccessed: '15 minutes ago' }
+      ]);
+      setError('🌐 Demo Mode: Showing sample data (Backend not connected)');
     } finally {
         setLoading(false);
     }
@@ -82,7 +102,11 @@ function App() {
         </header>
 
         {loading && <p className="text-center text-xl">Loading dashboard...</p>}
-        {error && <div className="bg-red-800 border border-red-600 text-white px-4 py-3 rounded relative mb-4" role="alert">{error}</div>}
+        {error && (
+          <div className={`${error.includes('Demo Mode') ? 'bg-blue-800 border-blue-600' : 'bg-red-800 border-red-600'} border text-white px-4 py-3 rounded relative mb-4`} role="alert">
+            {error}
+          </div>
+        )}
         
         {!loading && !error && (
             <>
