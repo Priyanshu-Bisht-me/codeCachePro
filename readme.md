@@ -1,23 +1,26 @@
 # 📦 CodeCache Pro
 
-**CodeCache Pro** is a production-grade, LAN-wide package caching proxy designed for Windows environments. It significantly speeds up package restoration for CI/CD pipelines and developer machines by caching `npm` packages locally. It is built to be memory-efficient, concurrent, and robust.
+**CodeCache Pro** is a production-grade, LAN-wide package caching proxy designed for Windows environments. It significantly speeds up package restoration for CI/CD pipelines and developer machines by caching `npm` and `PyPI` packages locally.
 
+## 🌐 Live Demo
 
+- **Frontend Demo**: [https://YOUR_USERNAME.github.io/codecache-pro/](https://YOUR_USERNAME.github.io/codecache-pro/)
+- **Source Code**: [https://github.com/YOUR_USERNAME/codecache-pro](https://github.com/YOUR_USERNAME/codecache-pro)
 
 ## Features ✨
 
--   **Multi-Registry Support**: Full support for both npm (Node.js) and PyPI (Python) package registries.
--   **High-Performance Proxy**: Built with Node.js and Express, using streams for memory-efficient handling of large packages.
--   **High Concurrency**: Tested to support 50+ simultaneous downloads across both registries.
--   **Persistent Metadata**: Uses SQLite for fast lookups and metadata storage with registry separation.
--   **Atomic & Verified Caching**: Guarantees downloads are complete and checksum-verified before being cached (SHA1 for npm, SHA256 for PyPI).
--   **Automatic Cache Pruning**: Uses an LRU (Least Recently Used) strategy to keep cache size below a configurable limit (default 5 GB).
--   **Real-time Dashboard**: A React-based web UI to monitor statistics and view cached packages with manual refresh capability.
--   **Console Statistics**: Real-time command-line statistics showing bandwidth saved, time saved, and cache performance as clients make requests.
--   **Full-featured CLI**: A powerful command-line tool to manage the server.
--   **Windows Service**: Includes PowerShell scripts to easily install, run, and manage the server as a background Windows service.
--   **Robust Logging**: Daily rotating logs for easy diagnostics.
--   **Registry Analytics**: Separate tracking and analytics for npm and PyPI usage patterns.
+-   **Multi-Registry Support**: Full support for both npm (Node.js) and PyPI (Python) package registries
+-   **High-Performance Proxy**: Built with Node.js and Express, using streams for memory-efficient handling
+-   **High Concurrency**: Tested to support 50+ simultaneous downloads across both registries
+-   **Persistent Metadata**: Uses SQLite for fast lookups and metadata storage with registry separation
+-   **Atomic & Verified Caching**: Guarantees downloads are complete and checksum-verified before being cached
+-   **Automatic Cache Pruning**: Uses LRU strategy to keep cache size below configurable limit (default 5 GB)
+-   **Real-time Dashboard**: React-based web UI to monitor statistics and view cached packages
+-   **Console Statistics**: Real-time command-line statistics showing bandwidth and time saved
+-   **Full-featured CLI**: Powerful command-line tool to manage the server
+-   **Windows Service**: PowerShell scripts to install, run, and manage as a background Windows service
+-   **Robust Logging**: Daily rotating logs for easy diagnostics
+-   **Registry Analytics**: Separate tracking and analytics for npm and PyPI usage patterns
 
 ---
 
@@ -67,8 +70,9 @@ To use the cache, configure your `npm` clients (developer machines, CI runners) 
 ```powershell
 # Replace <server_ip> with the IP address of the machine running CodeCache Pro
 npm config set registry http://<server_ip>:5050/npm
-### Confi
-guring Clients (pip)
+```
+
+### Configuring Clients (pip)
 
 To use the PyPI cache, configure your `pip` clients (developer machines, CI runners) to point to the CodeCache Pro server:
 
@@ -131,6 +135,13 @@ CodeCache Pro now includes full support for Python Package Index (PyPI) caching 
 - **All Python versions**: py2, py3, cp38, cp39, cp310, etc.
 - **All architectures**: any, win32, win_amd64, linux_x86_64, etc.
 
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18 + Vite + Tailwind CSS
+- **Backend**: Node.js + Express + SQLite
+- **CLI**: Node.js command-line interface
+- **Deployment**: GitHub Actions + Multiple hosting options
+
 ### Testing PyPI Cache
 
 Use the included test script to verify PyPI functionality:
@@ -161,5 +172,63 @@ pip install --force-reinstall requests
 - Statistics show breakdown by registry (npm vs PyPI)
 
 ---
+
+## 🚀 Quick Deploy Options
+
+### Option 1: Vercel (Recommended for React)
+1. Fork this repository
+2. Connect to [Vercel](https://vercel.com)
+3. Set root directory to `frontend`
+4. Deploy automatically on every push
+
+### Option 2: Netlify
+1. Fork this repository  
+2. Connect to [Netlify](https://netlify.com)
+3. Build settings: `frontend` directory, `npm run build`, publish `frontend/dist`
+
+### Option 3: Railway (Full-Stack)
+1. Fork this repository
+2. Connect to [Railway](https://railway.app)
+3. Deploys both frontend and backend together
+
+### Option 4: GitHub Pages (Automatic)
+- Enabled via GitHub Actions workflow
+- Automatically deploys frontend on every push to main branch
+- Access at: `https://YOUR_USERNAME.github.io/codecache-pro/`
+
+## 💻 Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/codecache-pro.git
+cd codecache-pro
+
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies  
+cd ../frontend
+npm install
+
+# Start backend (in one terminal)
+cd ../backend
+npm run dev
+
+# Start frontend (in another terminal)
+cd ../frontend
+npm run dev
+```
+
+## 📁 Project Structure
+
+```
+codecache-pro/
+├── frontend/          # React app with Vite + Tailwind CSS
+├── backend/           # Node.js Express server
+├── cli/              # Command-line interface
+├── scripts/          # Windows service installation scripts
+└── .github/workflows/ # GitHub Actions for auto-deployment
+```
 
 ## 🔧 Management

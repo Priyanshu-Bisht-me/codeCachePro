@@ -2534,3 +2534,466 @@
 {"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:15:22.783Z"}
 {"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T04:15:34.257Z"}
 {"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T04:15:34.292Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T06:49:19.112Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T06:49:19.134Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T06:49:36.623Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T06:49:36.640Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T06:49:36.641Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T06:49:36.643Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T06:49:36.672Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.1.109:5050","timestamp":"2025-10-17T06:49:36.673Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.1.109:5050/npm","timestamp":"2025-10-17T06:49:36.673Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.1.109:5050/pypi","timestamp":"2025-10-17T06:49:36.674Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T06:50:56.390Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T06:50:56.467Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T06:51:24.722Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T06:51:24.734Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T06:51:24.735Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T06:51:24.736Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T06:51:24.759Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.1.109:5050","timestamp":"2025-10-17T06:51:24.760Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.1.109:5050/npm","timestamp":"2025-10-17T06:51:24.761Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.1.109:5050/pypi","timestamp":"2025-10-17T06:51:24.762Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T06:51:32.911Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T06:51:33.018Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/halo/ -> \"halo/\"","timestamp":"2025-10-17T06:52:08.840Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"halo/\"","timestamp":"2025-10-17T06:52:08.842Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"halo/\"","timestamp":"2025-10-17T06:52:08.843Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/halo/","timestamp":"2025-10-17T06:52:08.844Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for halo/, size: 13962 chars","timestamp":"2025-10-17T06:52:09.062Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/setuptools/ -> \"setuptools/\"","timestamp":"2025-10-17T06:52:10.672Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"setuptools/\"","timestamp":"2025-10-17T06:52:10.673Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"setuptools/\"","timestamp":"2025-10-17T06:52:10.673Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/setuptools/","timestamp":"2025-10-17T06:52:10.673Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for setuptools/, size: 528715 chars","timestamp":"2025-10-17T06:52:10.894Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/log-symbols/ -> \"log-symbols/\"","timestamp":"2025-10-17T06:52:16.854Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"log-symbols/\"","timestamp":"2025-10-17T06:52:16.855Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"log-symbols/\"","timestamp":"2025-10-17T06:52:16.855Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/log-symbols/","timestamp":"2025-10-17T06:52:16.856Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for log-symbols/, size: 3464 chars","timestamp":"2025-10-17T06:52:16.992Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/spinners/ -> \"spinners/\"","timestamp":"2025-10-17T06:52:17.230Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"spinners/\"","timestamp":"2025-10-17T06:52:17.230Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"spinners/\"","timestamp":"2025-10-17T06:52:17.231Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/spinners/","timestamp":"2025-10-17T06:52:17.231Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for spinners/, size: 3190 chars","timestamp":"2025-10-17T06:52:17.267Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/termcolor/ -> \"termcolor/\"","timestamp":"2025-10-17T06:52:17.536Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"termcolor/\"","timestamp":"2025-10-17T06:52:17.537Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"termcolor/\"","timestamp":"2025-10-17T06:52:17.537Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/termcolor/","timestamp":"2025-10-17T06:52:17.537Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for termcolor/, size: 11217 chars","timestamp":"2025-10-17T06:52:17.575Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/colorama/ -> \"colorama/\"","timestamp":"2025-10-17T06:52:17.838Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"colorama/\"","timestamp":"2025-10-17T06:52:17.839Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"colorama/\"","timestamp":"2025-10-17T06:52:17.839Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/colorama/","timestamp":"2025-10-17T06:52:17.839Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for colorama/, size: 26703 chars","timestamp":"2025-10-17T06:52:17.864Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/streamlite/ -> \"streamlite/\"","timestamp":"2025-10-17T06:53:14.067Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"streamlite/\"","timestamp":"2025-10-17T06:53:14.067Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"streamlite/\"","timestamp":"2025-10-17T06:53:14.068Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/streamlite/","timestamp":"2025-10-17T06:53:14.068Z"}
+{"level":"error","message":"[PYPI PROXY ERROR] Failed to fetch streamlite/: Request failed with status code 404","timestamp":"2025-10-17T06:53:14.583Z"}
+{"level":"error","message":"[PYPI PROXY ERROR] Response status: 404, data: 404 Not Found","timestamp":"2025-10-17T06:53:14.584Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T07:02:19.007Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T07:02:19.022Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T07:02:19.022Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T07:02:19.023Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T07:02:19.055Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.1.109:5050","timestamp":"2025-10-17T07:02:19.056Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.1.109:5050/npm","timestamp":"2025-10-17T07:02:19.057Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.1.109:5050/pypi","timestamp":"2025-10-17T07:02:19.058Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T07:03:06.617Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T07:03:06.773Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T07:03:57.781Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T07:03:57.980Z"}
+{"level":"info","message":"[MISS] kleur@4.1.5. Fetching from upstream.","timestamp":"2025-10-17T07:03:57.982Z"}
+{"level":"info","message":"[CACHE] Successfully cached kleur@4.1.5 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\kleur\\kleur-4.1.5.tgz","timestamp":"2025-10-17T07:03:58.300Z"}
+{"level":"info","message":"[HIT] kleur@4.1.5 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\kleur\\kleur-4.1.5.tgz","timestamp":"2025-10-17T07:03:58.490Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T07:04:26.448Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T07:04:26.652Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/streamlit/ -> \"streamlit/\"","timestamp":"2025-10-17T07:05:52.477Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"streamlit/\"","timestamp":"2025-10-17T07:05:52.479Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"streamlit/\"","timestamp":"2025-10-17T07:05:52.479Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/streamlit/","timestamp":"2025-10-17T07:05:52.480Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for streamlit/, size: 170700 chars","timestamp":"2025-10-17T07:05:52.763Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/altair/ -> \"altair/\"","timestamp":"2025-10-17T07:05:54.638Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"altair/\"","timestamp":"2025-10-17T07:05:54.639Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"altair/\"","timestamp":"2025-10-17T07:05:54.640Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/altair/","timestamp":"2025-10-17T07:05:54.641Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for altair/, size: 27665 chars","timestamp":"2025-10-17T07:05:54.719Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/blinker/ -> \"blinker/\"","timestamp":"2025-10-17T07:05:55.237Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"blinker/\"","timestamp":"2025-10-17T07:05:55.243Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"blinker/\"","timestamp":"2025-10-17T07:05:55.244Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/blinker/","timestamp":"2025-10-17T07:05:55.245Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for blinker/, size: 9787 chars","timestamp":"2025-10-17T07:05:55.278Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/cachetools/ -> \"cachetools/\"","timestamp":"2025-10-17T07:05:55.493Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"cachetools/\"","timestamp":"2025-10-17T07:05:55.494Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"cachetools/\"","timestamp":"2025-10-17T07:05:55.494Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/cachetools/","timestamp":"2025-10-17T07:05:55.495Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for cachetools/, size: 36185 chars","timestamp":"2025-10-17T07:05:55.526Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/click/ -> \"click/\"","timestamp":"2025-10-17T07:05:55.775Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"click/\"","timestamp":"2025-10-17T07:05:55.776Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"click/\"","timestamp":"2025-10-17T07:05:55.776Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/click/","timestamp":"2025-10-17T07:05:55.776Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for click/, size: 42157 chars","timestamp":"2025-10-17T07:05:55.816Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/numpy/ -> \"numpy/\"","timestamp":"2025-10-17T07:05:55.967Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"numpy/\"","timestamp":"2025-10-17T07:05:55.968Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"numpy/\"","timestamp":"2025-10-17T07:05:55.968Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/numpy/","timestamp":"2025-10-17T07:05:55.972Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for numpy/, size: 1724345 chars","timestamp":"2025-10-17T07:05:56.099Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/packaging/ -> \"packaging/\"","timestamp":"2025-10-17T07:05:56.624Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"packaging/\"","timestamp":"2025-10-17T07:05:56.625Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"packaging/\"","timestamp":"2025-10-17T07:05:56.625Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/packaging/","timestamp":"2025-10-17T07:05:56.626Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for packaging/, size: 36435 chars","timestamp":"2025-10-17T07:05:56.698Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pandas/ -> \"pandas/\"","timestamp":"2025-10-17T07:05:56.885Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pandas/\"","timestamp":"2025-10-17T07:05:56.887Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pandas/\"","timestamp":"2025-10-17T07:05:56.887Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pandas/","timestamp":"2025-10-17T07:05:56.888Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pandas/, size: 1016349 chars","timestamp":"2025-10-17T07:05:56.970Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pillow/ -> \"pillow/\"","timestamp":"2025-10-17T07:05:57.241Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pillow/\"","timestamp":"2025-10-17T07:05:57.242Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pillow/\"","timestamp":"2025-10-17T07:05:57.243Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pillow/","timestamp":"2025-10-17T07:05:57.243Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pillow/, size: 1628159 chars","timestamp":"2025-10-17T07:05:57.408Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/protobuf/ -> \"protobuf/\"","timestamp":"2025-10-17T07:05:57.843Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"protobuf/\"","timestamp":"2025-10-17T07:05:57.844Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"protobuf/\"","timestamp":"2025-10-17T07:05:57.845Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/protobuf/","timestamp":"2025-10-17T07:05:57.845Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for protobuf/, size: 1332481 chars","timestamp":"2025-10-17T07:05:58.101Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pyarrow/ -> \"pyarrow/\"","timestamp":"2025-10-17T07:05:58.441Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pyarrow/\"","timestamp":"2025-10-17T07:05:58.442Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pyarrow/\"","timestamp":"2025-10-17T07:05:58.442Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pyarrow/","timestamp":"2025-10-17T07:05:58.443Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pyarrow/, size: 694287 chars","timestamp":"2025-10-17T07:05:58.569Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/tenacity/ -> \"tenacity/\"","timestamp":"2025-10-17T07:05:58.914Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"tenacity/\"","timestamp":"2025-10-17T07:05:58.914Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"tenacity/\"","timestamp":"2025-10-17T07:05:58.915Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/tenacity/","timestamp":"2025-10-17T07:05:58.915Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for tenacity/, size: 33923 chars","timestamp":"2025-10-17T07:05:58.950Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/toml/ -> \"toml/\"","timestamp":"2025-10-17T07:05:59.433Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"toml/\"","timestamp":"2025-10-17T07:05:59.434Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"toml/\"","timestamp":"2025-10-17T07:05:59.435Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/toml/","timestamp":"2025-10-17T07:05:59.436Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for toml/, size: 6236 chars","timestamp":"2025-10-17T07:05:59.507Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/typing-extensions/ -> \"typing-extensions/\"","timestamp":"2025-10-17T07:05:59.719Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"typing-extensions/\"","timestamp":"2025-10-17T07:05:59.720Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"typing-extensions/\"","timestamp":"2025-10-17T07:05:59.720Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/typing-extensions/","timestamp":"2025-10-17T07:05:59.721Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for typing-extensions/, size: 46741 chars","timestamp":"2025-10-17T07:05:59.770Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/watchdog/ -> \"watchdog/\"","timestamp":"2025-10-17T07:05:59.982Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"watchdog/\"","timestamp":"2025-10-17T07:05:59.983Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"watchdog/\"","timestamp":"2025-10-17T07:05:59.984Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/watchdog/","timestamp":"2025-10-17T07:05:59.984Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for watchdog/, size: 363037 chars","timestamp":"2025-10-17T07:06:00.085Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/gitpython/ -> \"gitpython/\"","timestamp":"2025-10-17T07:06:00.478Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"gitpython/\"","timestamp":"2025-10-17T07:06:00.478Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"gitpython/\"","timestamp":"2025-10-17T07:06:00.479Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/gitpython/","timestamp":"2025-10-17T07:06:00.479Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for gitpython/, size: 65133 chars","timestamp":"2025-10-17T07:06:00.524Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pydeck/ -> \"pydeck/\"","timestamp":"2025-10-17T07:06:01.108Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pydeck/\"","timestamp":"2025-10-17T07:06:01.109Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pydeck/\"","timestamp":"2025-10-17T07:06:01.109Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pydeck/","timestamp":"2025-10-17T07:06:01.109Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pydeck/, size: 28833 chars","timestamp":"2025-10-17T07:06:01.151Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/tornado/ -> \"tornado/\"","timestamp":"2025-10-17T07:06:01.530Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"tornado/\"","timestamp":"2025-10-17T07:06:01.531Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"tornado/\"","timestamp":"2025-10-17T07:06:01.534Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/tornado/","timestamp":"2025-10-17T07:06:01.535Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for tornado/, size: 231214 chars","timestamp":"2025-10-17T07:06:01.624Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/jinja2/ -> \"jinja2/\"","timestamp":"2025-10-17T07:06:02.007Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"jinja2/\"","timestamp":"2025-10-17T07:06:02.008Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"jinja2/\"","timestamp":"2025-10-17T07:06:02.008Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/jinja2/","timestamp":"2025-10-17T07:06:02.008Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for jinja2/, size: 32443 chars","timestamp":"2025-10-17T07:06:02.081Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/jsonschema/ -> \"jsonschema/\"","timestamp":"2025-10-17T07:06:02.365Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"jsonschema/\"","timestamp":"2025-10-17T07:06:02.365Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"jsonschema/\"","timestamp":"2025-10-17T07:06:02.366Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/jsonschema/","timestamp":"2025-10-17T07:06:02.366Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for jsonschema/, size: 79247 chars","timestamp":"2025-10-17T07:06:02.409Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/narwhals/ -> \"narwhals/\"","timestamp":"2025-10-17T07:06:02.641Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"narwhals/\"","timestamp":"2025-10-17T07:06:02.642Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"narwhals/\"","timestamp":"2025-10-17T07:06:02.643Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/narwhals/","timestamp":"2025-10-17T07:06:02.644Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for narwhals/, size: 184935 chars","timestamp":"2025-10-17T07:06:02.688Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/gitdb/ -> \"gitdb/\"","timestamp":"2025-10-17T07:06:03.009Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"gitdb/\"","timestamp":"2025-10-17T07:06:03.010Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"gitdb/\"","timestamp":"2025-10-17T07:06:03.011Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/gitdb/","timestamp":"2025-10-17T07:06:03.011Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for gitdb/, size: 11461 chars","timestamp":"2025-10-17T07:06:03.034Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/smmap/ -> \"smmap/\"","timestamp":"2025-10-17T07:06:03.229Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"smmap/\"","timestamp":"2025-10-17T07:06:03.230Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"smmap/\"","timestamp":"2025-10-17T07:06:03.230Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/smmap/","timestamp":"2025-10-17T07:06:03.230Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for smmap/, size: 9973 chars","timestamp":"2025-10-17T07:06:03.248Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/python-dateutil/ -> \"python-dateutil/\"","timestamp":"2025-10-17T07:06:03.515Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"python-dateutil/\"","timestamp":"2025-10-17T07:06:03.516Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"python-dateutil/\"","timestamp":"2025-10-17T07:06:03.516Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/python-dateutil/","timestamp":"2025-10-17T07:06:03.517Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for python-dateutil/, size: 20063 chars","timestamp":"2025-10-17T07:06:03.556Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pytz/ -> \"pytz/\"","timestamp":"2025-10-17T07:06:03.782Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pytz/\"","timestamp":"2025-10-17T07:06:03.783Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pytz/\"","timestamp":"2025-10-17T07:06:03.784Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pytz/","timestamp":"2025-10-17T07:06:03.784Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pytz/, size: 187647 chars","timestamp":"2025-10-17T07:06:03.855Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/tzdata/ -> \"tzdata/\"","timestamp":"2025-10-17T07:06:04.132Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"tzdata/\"","timestamp":"2025-10-17T07:06:04.133Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"tzdata/\"","timestamp":"2025-10-17T07:06:04.134Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/tzdata/","timestamp":"2025-10-17T07:06:04.134Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for tzdata/, size: 23575 chars","timestamp":"2025-10-17T07:06:04.165Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/markupsafe/ -> \"markupsafe/\"","timestamp":"2025-10-17T07:06:04.403Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"markupsafe/\"","timestamp":"2025-10-17T07:06:04.404Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"markupsafe/\"","timestamp":"2025-10-17T07:06:04.404Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/markupsafe/","timestamp":"2025-10-17T07:06:04.404Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for markupsafe/, size: 474425 chars","timestamp":"2025-10-17T07:06:04.462Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/attrs/ -> \"attrs/\"","timestamp":"2025-10-17T07:06:04.720Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"attrs/\"","timestamp":"2025-10-17T07:06:04.723Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"attrs/\"","timestamp":"2025-10-17T07:06:04.723Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/attrs/","timestamp":"2025-10-17T07:06:04.724Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for attrs/, size: 27789 chars","timestamp":"2025-10-17T07:06:04.751Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/jsonschema-specifications/ -> \"jsonschema-specifications/\"","timestamp":"2025-10-17T07:06:05.056Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"jsonschema-specifications/\"","timestamp":"2025-10-17T07:06:05.057Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"jsonschema-specifications/\"","timestamp":"2025-10-17T07:06:05.058Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/jsonschema-specifications/","timestamp":"2025-10-17T07:06:05.058Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for jsonschema-specifications/, size: 21887 chars","timestamp":"2025-10-17T07:06:05.083Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/referencing/ -> \"referencing/\"","timestamp":"2025-10-17T07:06:05.281Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"referencing/\"","timestamp":"2025-10-17T07:06:05.281Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"referencing/\"","timestamp":"2025-10-17T07:06:05.282Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/referencing/","timestamp":"2025-10-17T07:06:05.283Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for referencing/, size: 83291 chars","timestamp":"2025-10-17T07:06:05.317Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/rpds-py/ -> \"rpds-py/\"","timestamp":"2025-10-17T07:06:05.583Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"rpds-py/\"","timestamp":"2025-10-17T07:06:05.583Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"rpds-py/\"","timestamp":"2025-10-17T07:06:05.584Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/rpds-py/","timestamp":"2025-10-17T07:06:05.584Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for rpds-py/, size: 2682893 chars","timestamp":"2025-10-17T07:06:05.798Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pip/ -> \"pip/\"","timestamp":"2025-10-17T07:08:58.432Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pip/\"","timestamp":"2025-10-17T07:08:58.433Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pip/\"","timestamp":"2025-10-17T07:08:58.433Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pip/","timestamp":"2025-10-17T07:08:58.434Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pip/, size: 100099 chars","timestamp":"2025-10-17T07:08:58.576Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi/pip/ -> \"pip/\"","timestamp":"2025-10-17T07:11:02.054Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"pip/\"","timestamp":"2025-10-17T07:11:02.055Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"pip/\"","timestamp":"2025-10-17T07:11:02.056Z"}
+{"level":"info","message":"[PYPI PROXY] Fetching metadata from: https://pypi.org/simple/pip/","timestamp":"2025-10-17T07:11:02.056Z"}
+{"level":"info","message":"[PYPI PROXY] Successfully fetched metadata for pip/, size: 100099 chars","timestamp":"2025-10-17T07:11:02.157Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T07:27:19.560Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T07:27:19.582Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T07:27:19.583Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T07:27:19.584Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T07:27:19.610Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.1.109:5050","timestamp":"2025-10-17T07:27:19.611Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.1.109:5050/npm","timestamp":"2025-10-17T07:27:19.611Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.1.109:5050/pypi","timestamp":"2025-10-17T07:27:19.612Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T07:46:26.383Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T07:46:26.389Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T07:46:26.389Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T07:46:26.390Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T07:46:26.402Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.1.109:5050","timestamp":"2025-10-17T07:46:26.403Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.1.109:5050/npm","timestamp":"2025-10-17T07:46:26.403Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.1.109:5050/pypi","timestamp":"2025-10-17T07:46:26.403Z"}
+{"level":"info","message":"[PYPI REQUEST] GET /pypi -> \"\"","timestamp":"2025-10-17T07:47:39.036Z"}
+{"level":"info","message":"[PYPI DEBUG] Is package file: false, URL: \"\"","timestamp":"2025-10-17T07:47:39.037Z"}
+{"level":"info","message":"[PYPI METADATA] Proxying metadata request for: \"\"","timestamp":"2025-10-17T07:47:39.037Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T08:00:15.413Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T08:00:15.420Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T08:00:15.420Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T08:00:15.421Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T08:00:15.434Z"}
+{"level":"info","message":"🌐 Access from other devices: http://10.227.151.41:5050","timestamp":"2025-10-17T08:00:15.434Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://10.227.151.41:5050/npm","timestamp":"2025-10-17T08:00:15.435Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://10.227.151.41:5050/pypi","timestamp":"2025-10-17T08:00:15.435Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T08:09:43.297Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T08:09:43.303Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T08:09:43.303Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T08:09:43.304Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T08:09:43.318Z"}
+{"level":"info","message":"🌐 Access from other devices: http://10.227.151.41:5050","timestamp":"2025-10-17T08:09:43.319Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://10.227.151.41:5050/npm","timestamp":"2025-10-17T08:09:43.319Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://10.227.151.41:5050/pypi","timestamp":"2025-10-17T08:09:43.319Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:11:40.666Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:11:40.760Z"}
+{"level":"error","message":"500 - getaddrinfo ENOTFOUND registry.npmjs.org - /npm/chalk - GET - 10.227.151.158","timestamp":"2025-10-17T08:11:45.205Z"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND registry.npmjs.org\n    at AxiosError.from (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:905:14)\n    at RedirectableRequest.handleRequestError (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:3326:25)\n    at RedirectableRequest.emit (node:events:519:28)\n    at eventHandlers.<computed> (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\follow-redirects\\index.js:49:24)\n    at ClientRequest.emit (node:events:519:28)\n    at emitErrorEvent (node:_http_client:105:11)\n    at TLSSocket.socketErrorListener (node:_http_client:518:5)\n    at TLSSocket.emit (node:events:519:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:4483:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async proxyMetadata (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\src\\fetchers\\npmFetcher.js:199:26)","timestamp":"2025-10-17T08:11:45.206Z"}
+{"level":"error","message":"500 - getaddrinfo ENOTFOUND registry.npmjs.org - /npm/chalk - GET - 10.227.151.158","timestamp":"2025-10-17T08:11:55.619Z"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND registry.npmjs.org\n    at AxiosError.from (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:905:14)\n    at RedirectableRequest.handleRequestError (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:3326:25)\n    at RedirectableRequest.emit (node:events:519:28)\n    at eventHandlers.<computed> (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\follow-redirects\\index.js:49:24)\n    at ClientRequest.emit (node:events:519:28)\n    at emitErrorEvent (node:_http_client:105:11)\n    at TLSSocket.socketErrorListener (node:_http_client:518:5)\n    at TLSSocket.emit (node:events:519:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:4483:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async proxyMetadata (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\src\\fetchers\\npmFetcher.js:199:26)","timestamp":"2025-10-17T08:11:55.620Z"}
+{"level":"error","message":"500 - getaddrinfo ENOTFOUND registry.npmjs.org - /npm/chalk - GET - 10.227.151.158","timestamp":"2025-10-17T08:12:56.138Z"}
+{"level":"error","message":"Error: getaddrinfo ENOTFOUND registry.npmjs.org\n    at AxiosError.from (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:905:14)\n    at RedirectableRequest.handleRequestError (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:3326:25)\n    at RedirectableRequest.emit (node:events:519:28)\n    at eventHandlers.<computed> (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\follow-redirects\\index.js:49:24)\n    at ClientRequest.emit (node:events:519:28)\n    at emitErrorEvent (node:_http_client:105:11)\n    at TLSSocket.socketErrorListener (node:_http_client:518:5)\n    at TLSSocket.emit (node:events:519:28)\n    at emitErrorNT (node:internal/streams/destroy:170:8)\n    at emitErrorCloseNT (node:internal/streams/destroy:129:3)\n    at Axios.request (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\node_modules\\axios\\dist\\node\\axios.cjs:4483:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async proxyMetadata (C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\backend\\src\\fetchers\\npmFetcher.js:199:26)","timestamp":"2025-10-17T08:12:56.139Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T08:20:05.084Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T08:20:05.091Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T08:20:05.091Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T08:20:05.091Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T08:20:05.104Z"}
+{"level":"info","message":"🌐 Access from other devices: http://192.168.1.109:5050","timestamp":"2025-10-17T08:20:05.104Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://192.168.1.109:5050/npm","timestamp":"2025-10-17T08:20:05.105Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://192.168.1.109:5050/pypi","timestamp":"2025-10-17T08:20:05.105Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:21:57.992Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:21:58.014Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:22:17.372Z"}
+{"level":"info","message":"[MISS] signal-exit@4.1.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.373Z"}
+{"level":"info","message":"[MISS] onetime@7.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.374Z"}
+{"level":"info","message":"[MISS] mimic-function@5.0.1. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.374Z"}
+{"level":"info","message":"[MISS] stdin-discarder@0.2.2. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.375Z"}
+{"level":"info","message":"[MISS] yoctocolors@2.1.2. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.376Z"}
+{"level":"info","message":"[MISS] log-symbols@7.0.1. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.376Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:22:17.394Z"}
+{"level":"info","message":"[MISS] cli-cursor@5.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.408Z"}
+{"level":"info","message":"[MISS] is-interactive@2.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.410Z"}
+{"level":"info","message":"[MISS] ora@9.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.413Z"}
+{"level":"info","message":"[MISS] is-unicode-supported@2.1.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.414Z"}
+{"level":"info","message":"[MISS] restore-cursor@5.1.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.416Z"}
+{"level":"info","message":"[MISS] cli-spinners@3.3.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.417Z"}
+{"level":"info","message":"[MISS] string-width@8.1.0. Fetching from upstream.","timestamp":"2025-10-17T08:22:17.419Z"}
+{"level":"info","message":"[CACHE] Successfully cached mimic-function@5.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\mimic-function\\mimic-function-5.0.1.tgz","timestamp":"2025-10-17T08:22:17.465Z"}
+{"level":"info","message":"[CACHE] Successfully cached onetime@7.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\onetime\\onetime-7.0.0.tgz","timestamp":"2025-10-17T08:22:17.475Z"}
+{"level":"info","message":"[CACHE] Successfully cached log-symbols@7.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\log-symbols\\log-symbols-7.0.1.tgz","timestamp":"2025-10-17T08:22:17.480Z"}
+{"level":"info","message":"[CACHE] Successfully cached yoctocolors@2.1.2 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\yoctocolors\\yoctocolors-2.1.2.tgz","timestamp":"2025-10-17T08:22:17.484Z"}
+{"level":"info","message":"[HIT] mimic-function@5.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\mimic-function\\mimic-function-5.0.1.tgz","timestamp":"2025-10-17T08:22:17.485Z"}
+{"level":"info","message":"[CACHE] Successfully cached stdin-discarder@0.2.2 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\stdin-discarder\\stdin-discarder-0.2.2.tgz","timestamp":"2025-10-17T08:22:17.489Z"}
+{"level":"info","message":"[HIT] onetime@7.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\onetime\\onetime-7.0.0.tgz","timestamp":"2025-10-17T08:22:17.499Z"}
+{"level":"info","message":"[HIT] log-symbols@7.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\log-symbols\\log-symbols-7.0.1.tgz","timestamp":"2025-10-17T08:22:17.499Z"}
+{"level":"info","message":"[CACHE] Successfully cached signal-exit@4.1.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\signal-exit\\signal-exit-4.1.0.tgz","timestamp":"2025-10-17T08:22:17.521Z"}
+{"level":"info","message":"[CACHE] Successfully cached restore-cursor@5.1.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\restore-cursor\\restore-cursor-5.1.0.tgz","timestamp":"2025-10-17T08:22:17.525Z"}
+{"level":"info","message":"[HIT] yoctocolors@2.1.2 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\yoctocolors\\yoctocolors-2.1.2.tgz","timestamp":"2025-10-17T08:22:17.526Z"}
+{"level":"info","message":"[HIT] stdin-discarder@0.2.2 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\stdin-discarder\\stdin-discarder-0.2.2.tgz","timestamp":"2025-10-17T08:22:17.526Z"}
+{"level":"info","message":"[HIT] signal-exit@4.1.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\signal-exit\\signal-exit-4.1.0.tgz","timestamp":"2025-10-17T08:22:17.551Z"}
+{"level":"info","message":"[HIT] restore-cursor@5.1.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\restore-cursor\\restore-cursor-5.1.0.tgz","timestamp":"2025-10-17T08:22:17.552Z"}
+{"level":"info","message":"[CACHE] Successfully cached ora@9.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\ora\\ora-9.0.0.tgz","timestamp":"2025-10-17T08:22:17.557Z"}
+{"level":"info","message":"[CACHE] Successfully cached is-interactive@2.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\is-interactive\\is-interactive-2.0.0.tgz","timestamp":"2025-10-17T08:22:17.561Z"}
+{"level":"info","message":"[HIT] ora@9.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\ora\\ora-9.0.0.tgz","timestamp":"2025-10-17T08:22:17.578Z"}
+{"level":"info","message":"[HIT] is-interactive@2.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\is-interactive\\is-interactive-2.0.0.tgz","timestamp":"2025-10-17T08:22:17.579Z"}
+{"level":"info","message":"[CACHE] Successfully cached is-unicode-supported@2.1.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\is-unicode-supported\\is-unicode-supported-2.1.0.tgz","timestamp":"2025-10-17T08:22:17.601Z"}
+{"level":"info","message":"[CACHE] Successfully cached string-width@8.1.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\string-width\\string-width-8.1.0.tgz","timestamp":"2025-10-17T08:22:17.606Z"}
+{"level":"info","message":"[HIT] is-unicode-supported@2.1.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\is-unicode-supported\\is-unicode-supported-2.1.0.tgz","timestamp":"2025-10-17T08:22:17.612Z"}
+{"level":"info","message":"[HIT] string-width@8.1.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\string-width\\string-width-8.1.0.tgz","timestamp":"2025-10-17T08:22:17.621Z"}
+{"level":"info","message":"[CACHE] Successfully cached cli-spinners@3.3.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cli-spinners\\cli-spinners-3.3.0.tgz","timestamp":"2025-10-17T08:22:17.634Z"}
+{"level":"info","message":"[CACHE] Successfully cached cli-cursor@5.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cli-cursor\\cli-cursor-5.0.0.tgz","timestamp":"2025-10-17T08:22:17.639Z"}
+{"level":"info","message":"[HIT] cli-spinners@3.3.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cli-spinners\\cli-spinners-3.3.0.tgz","timestamp":"2025-10-17T08:22:17.642Z"}
+{"level":"info","message":"[HIT] cli-cursor@5.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cli-cursor\\cli-cursor-5.0.0.tgz","timestamp":"2025-10-17T08:22:17.651Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:22:38.199Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:22:38.401Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:22:47.227Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:22:47.415Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T08:32:34.117Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T08:32:34.124Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T08:32:34.124Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T08:32:34.125Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T08:32:34.140Z"}
+{"level":"info","message":"🌐 Access from other devices: http://10.100.255.211:5050","timestamp":"2025-10-17T08:32:34.140Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://10.100.255.211:5050/npm","timestamp":"2025-10-17T08:32:34.140Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://10.100.255.211:5050/pypi","timestamp":"2025-10-17T08:32:34.140Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:33:51.271Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:33:51.492Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T08:48:49.533Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T08:48:49.546Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T08:48:49.547Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T08:48:49.549Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T08:48:49.580Z"}
+{"level":"info","message":"🌐 Access from other devices: http://10.100.255.211:5050","timestamp":"2025-10-17T08:48:49.581Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://10.100.255.211:5050/npm","timestamp":"2025-10-17T08:48:49.581Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://10.100.255.211:5050/pypi","timestamp":"2025-10-17T08:48:49.582Z"}
+{"level":"info","message":"Connected to SQLite database.","timestamp":"2025-10-17T08:50:09.100Z"}
+{"level":"info","message":"Registry column already exists, skipping migration.","timestamp":"2025-10-17T08:50:09.116Z"}
+{"level":"info","message":"Database initialized successfully.","timestamp":"2025-10-17T08:50:09.117Z"}
+{"level":"info","message":"Cache pruning service started.","timestamp":"2025-10-17T08:50:09.118Z"}
+{"level":"info","message":"🚀 CodeCache Pro server running on http://0.0.0.0:5050","timestamp":"2025-10-17T08:50:09.193Z"}
+{"level":"info","message":"🌐 Access from other devices: http://10.100.255.211:5050","timestamp":"2025-10-17T08:50:09.194Z"}
+{"level":"info","message":"📋 Configure npm clients with: npm config set registry http://10.100.255.211:5050/npm","timestamp":"2025-10-17T08:50:09.195Z"}
+{"level":"info","message":"🐍 Configure pip clients with: pip config set global.index-url http://10.100.255.211:5050/pypi","timestamp":"2025-10-17T08:50:09.196Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:52:21.647Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:52:21.988Z"}
+{"level":"info","message":"[HIT] react@19.2.0 from C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\react\\react-19.2.0.tgz","timestamp":"2025-10-17T08:52:21.990Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\react\\react-19.2.0.tgz' - /npm/react/-/react-19.2.0.tgz - GET - 10.100.255.158","timestamp":"2025-10-17T08:52:21.995Z"}
+{"level":"error","message":"Error: ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\react\\react-19.2.0.tgz'","timestamp":"2025-10-17T08:52:21.996Z"}
+{"level":"info","message":"[HIT] react@19.2.0 from C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\react\\react-19.2.0.tgz","timestamp":"2025-10-17T08:52:32.588Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\react\\react-19.2.0.tgz' - /npm/react/-/react-19.2.0.tgz - GET - 10.100.255.158","timestamp":"2025-10-17T08:52:32.591Z"}
+{"level":"error","message":"Error: ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\react\\react-19.2.0.tgz'","timestamp":"2025-10-17T08:52:32.592Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:52:55.221Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:52:55.425Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/advisories/bulk","timestamp":"2025-10-17T08:54:22.918Z"}
+{"level":"info","message":"[MISS] color-convert@2.0.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.920Z"}
+{"level":"info","message":"[MISS] p-try@2.2.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.923Z"}
+{"level":"info","message":"[MISS] color-name@1.1.4. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.925Z"}
+{"level":"info","message":"[MISS] p-locate@4.1.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.930Z"}
+{"level":"info","message":"[MISS] locate-path@5.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.933Z"}
+{"level":"info","message":"[MISS] p-limit@2.3.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.935Z"}
+{"level":"info","message":"[MISS] yargs-parser@18.1.3. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.940Z"}
+{"level":"info","message":"[MISS] path-exists@4.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.947Z"}
+{"level":"info","message":"[MISS] y18n@4.0.3. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.952Z"}
+{"level":"info","message":"[MISS] which-module@2.0.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:22.959Z"}
+{"level":"info","message":"[MISS] require-main-filename@2.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:23.120Z"}
+{"level":"info","message":"[MISS] find-up@4.1.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:23.123Z"}
+{"level":"info","message":"[MISS] decamelize@1.2.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:23.124Z"}
+{"level":"info","message":"[MISS] require-directory@2.1.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:23.126Z"}
+{"level":"info","message":"[HIT] set-blocking@2.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\set-blocking\\set-blocking-2.0.0.tgz","timestamp":"2025-10-17T08:54:23.130Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\set-blocking\\set-blocking-2.0.0.tgz' - /npm/set-blocking/-/set-blocking-2.0.0.tgz - GET - 10.100.255.158","timestamp":"2025-10-17T08:54:23.133Z"}
+{"level":"error","message":"Error: ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\set-blocking\\set-blocking-2.0.0.tgz'","timestamp":"2025-10-17T08:54:23.133Z"}
+{"level":"info","message":"[CACHE] Successfully cached color-convert@2.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\color-convert\\color-convert-2.0.1.tgz","timestamp":"2025-10-17T08:54:23.282Z"}
+{"level":"info","message":"[CACHE] Successfully cached find-up@4.1.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\find-up\\find-up-4.1.0.tgz","timestamp":"2025-10-17T08:54:23.303Z"}
+{"level":"info","message":"[CACHE] Successfully cached require-main-filename@2.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\require-main-filename\\require-main-filename-2.0.0.tgz","timestamp":"2025-10-17T08:54:23.382Z"}
+{"level":"info","message":"[CACHE] Successfully cached decamelize@1.2.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\decamelize\\decamelize-1.2.0.tgz","timestamp":"2025-10-17T08:54:23.398Z"}
+{"level":"info","message":"[MISS] get-caller-file@2.0.5. Fetching from upstream.","timestamp":"2025-10-17T08:54:23.599Z"}
+{"level":"info","message":"[CACHE] Successfully cached get-caller-file@2.0.5 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\get-caller-file\\get-caller-file-2.0.5.tgz","timestamp":"2025-10-17T08:54:24.044Z"}
+{"level":"info","message":"[MISS] cliui@6.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:24.564Z"}
+{"level":"info","message":"[MISS] camelcase@5.3.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:24.607Z"}
+{"level":"info","message":"[MISS] strip-final-newline@2.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:24.611Z"}
+{"level":"info","message":"[MISS] yargs@15.4.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:24.612Z"}
+{"level":"info","message":"[CACHE] Successfully cached cliui@6.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cliui\\cliui-6.0.0.tgz","timestamp":"2025-10-17T08:54:24.787Z"}
+{"level":"info","message":"[MISS] cowsay@1.6.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:24.798Z"}
+{"level":"info","message":"[CACHE] Successfully cached strip-final-newline@2.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\strip-final-newline\\strip-final-newline-2.0.0.tgz","timestamp":"2025-10-17T08:54:24.845Z"}
+{"level":"info","message":"[CACHE] Successfully cached camelcase@5.3.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\camelcase\\camelcase-5.3.1.tgz","timestamp":"2025-10-17T08:54:24.887Z"}
+{"level":"info","message":"[CACHE] Successfully cached yargs@15.4.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\yargs\\yargs-15.4.1.tgz","timestamp":"2025-10-17T08:54:25.111Z"}
+{"level":"info","message":"[MISS] get-stdin@8.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:25.760Z"}
+{"level":"info","message":"[MISS] ansi-styles@4.3.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:25.815Z"}
+{"level":"info","message":"[MISS] wrap-ansi@6.2.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:25.876Z"}
+{"level":"info","message":"[MISS] strip-ansi@4.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:25.918Z"}
+{"level":"info","message":"[CACHE] Successfully cached cowsay@1.6.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cowsay\\cowsay-1.6.0.tgz","timestamp":"2025-10-17T08:54:26.055Z"}
+{"level":"info","message":"[CACHE] Successfully cached p-locate@4.1.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\p-locate\\p-locate-4.1.0.tgz","timestamp":"2025-10-17T08:54:26.065Z"}
+{"level":"info","message":"[CACHE] Successfully cached get-stdin@8.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\get-stdin\\get-stdin-8.0.0.tgz","timestamp":"2025-10-17T08:54:26.083Z"}
+{"level":"info","message":"[CACHE] Successfully cached ansi-styles@4.3.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\ansi-styles\\ansi-styles-4.3.0.tgz","timestamp":"2025-10-17T08:54:26.245Z"}
+{"level":"info","message":"[MISS] ansi-regex@3.0.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:28.753Z"}
+{"level":"warn","message":"Blocked unsupported method POST for /npm/-/npm/v1/security/audits/quick","timestamp":"2025-10-17T08:54:28.779Z"}
+{"level":"info","message":"[MISS] string-width@2.1.1. Fetching from upstream.","timestamp":"2025-10-17T08:54:28.792Z"}
+{"level":"info","message":"[MISS] is-fullwidth-code-point@2.0.0. Fetching from upstream.","timestamp":"2025-10-17T08:54:28.794Z"}
+{"level":"info","message":"[CACHE] Successfully cached ansi-regex@3.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\ansi-regex\\ansi-regex-3.0.1.tgz","timestamp":"2025-10-17T08:54:28.948Z"}
+{"level":"info","message":"[CACHE] Successfully cached string-width@2.1.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\string-width\\string-width-2.1.1.tgz","timestamp":"2025-10-17T08:54:28.954Z"}
+{"level":"info","message":"[CACHE] Successfully cached is-fullwidth-code-point@2.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\is-fullwidth-code-point\\is-fullwidth-code-point-2.0.0.tgz","timestamp":"2025-10-17T08:54:28.960Z"}
+{"level":"info","message":"[CACHE] Successfully cached wrap-ansi@6.2.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\wrap-ansi\\wrap-ansi-6.2.0.tgz","timestamp":"2025-10-17T08:54:29.317Z"}
+{"level":"info","message":"[HIT] color-convert@2.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\color-convert\\color-convert-2.0.1.tgz","timestamp":"2025-10-17T08:54:29.380Z"}
+{"level":"info","message":"[HIT] require-main-filename@2.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\require-main-filename\\require-main-filename-2.0.0.tgz","timestamp":"2025-10-17T08:54:29.381Z"}
+{"level":"info","message":"[HIT] find-up@4.1.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\find-up\\find-up-4.1.0.tgz","timestamp":"2025-10-17T08:54:29.382Z"}
+{"level":"info","message":"[HIT] decamelize@1.2.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\decamelize\\decamelize-1.2.0.tgz","timestamp":"2025-10-17T08:54:29.385Z"}
+{"level":"info","message":"[CACHE] Successfully cached locate-path@5.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\locate-path\\locate-path-5.0.0.tgz","timestamp":"2025-10-17T08:54:29.609Z"}
+{"level":"info","message":"[HIT] get-caller-file@2.0.5 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\get-caller-file\\get-caller-file-2.0.5.tgz","timestamp":"2025-10-17T08:54:29.611Z"}
+{"level":"info","message":"[HIT] strip-final-newline@2.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\strip-final-newline\\strip-final-newline-2.0.0.tgz","timestamp":"2025-10-17T08:54:29.612Z"}
+{"level":"info","message":"[HIT] cliui@6.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cliui\\cliui-6.0.0.tgz","timestamp":"2025-10-17T08:54:29.613Z"}
+{"level":"info","message":"[CACHE] Successfully cached color-name@1.1.4 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\color-name\\color-name-1.1.4.tgz","timestamp":"2025-10-17T08:54:29.618Z"}
+{"level":"info","message":"[CACHE] Successfully cached p-try@2.2.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\p-try\\p-try-2.2.0.tgz","timestamp":"2025-10-17T08:54:29.623Z"}
+{"level":"info","message":"[CACHE] Successfully cached path-exists@4.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\path-exists\\path-exists-4.0.0.tgz","timestamp":"2025-10-17T08:54:29.668Z"}
+{"level":"info","message":"[CACHE] Successfully cached yargs-parser@18.1.3 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\yargs-parser\\yargs-parser-18.1.3.tgz","timestamp":"2025-10-17T08:54:29.673Z"}
+{"level":"info","message":"[CACHE] Successfully cached require-directory@2.1.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\require-directory\\require-directory-2.1.1.tgz","timestamp":"2025-10-17T08:54:29.944Z"}
+{"level":"info","message":"[HIT] p-locate@4.1.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\p-locate\\p-locate-4.1.0.tgz","timestamp":"2025-10-17T08:54:29.946Z"}
+{"level":"info","message":"[HIT] get-stdin@8.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\get-stdin\\get-stdin-8.0.0.tgz","timestamp":"2025-10-17T08:54:29.947Z"}
+{"level":"info","message":"[HIT] is-fullwidth-code-point@2.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\is-fullwidth-code-point\\is-fullwidth-code-point-2.0.0.tgz","timestamp":"2025-10-17T08:54:29.947Z"}
+{"level":"info","message":"[HIT] wrap-ansi@6.2.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\wrap-ansi\\wrap-ansi-6.2.0.tgz","timestamp":"2025-10-17T08:54:29.948Z"}
+{"level":"info","message":"[HIT] camelcase@5.3.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\camelcase\\camelcase-5.3.1.tgz","timestamp":"2025-10-17T08:54:29.948Z"}
+{"level":"info","message":"[HIT] yargs@15.4.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\yargs\\yargs-15.4.1.tgz","timestamp":"2025-10-17T08:54:29.949Z"}
+{"level":"info","message":"[HIT] cowsay@1.6.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\cowsay\\cowsay-1.6.0.tgz","timestamp":"2025-10-17T08:54:29.949Z"}
+{"level":"info","message":"[HIT] ansi-regex@3.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\ansi-regex\\ansi-regex-3.0.1.tgz","timestamp":"2025-10-17T08:54:29.950Z"}
+{"level":"info","message":"[HIT] string-width@2.1.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\string-width\\string-width-2.1.1.tgz","timestamp":"2025-10-17T08:54:29.950Z"}
+{"level":"info","message":"[HIT] ansi-styles@4.3.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\ansi-styles\\ansi-styles-4.3.0.tgz","timestamp":"2025-10-17T08:54:29.951Z"}
+{"level":"info","message":"[CACHE] Successfully cached which-module@2.0.1 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\which-module\\which-module-2.0.1.tgz","timestamp":"2025-10-17T08:54:29.981Z"}
+{"level":"info","message":"[CACHE] Successfully cached y18n@4.0.3 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\y18n\\y18n-4.0.3.tgz","timestamp":"2025-10-17T08:54:29.988Z"}
+{"level":"info","message":"[CACHE] Successfully cached p-limit@2.3.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\p-limit\\p-limit-2.3.0.tgz","timestamp":"2025-10-17T08:54:29.995Z"}
+{"level":"info","message":"[CACHE] Successfully cached strip-ansi@4.0.0 to C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\strip-ansi\\strip-ansi-4.0.0.tgz","timestamp":"2025-10-17T08:54:30.127Z"}
+{"level":"info","message":"[HIT] require-directory@2.1.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\require-directory\\require-directory-2.1.1.tgz","timestamp":"2025-10-17T08:54:30.129Z"}
+{"level":"info","message":"[HIT] y18n@4.0.3 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\y18n\\y18n-4.0.3.tgz","timestamp":"2025-10-17T08:54:30.130Z"}
+{"level":"info","message":"[HIT] p-limit@2.3.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\p-limit\\p-limit-2.3.0.tgz","timestamp":"2025-10-17T08:54:30.131Z"}
+{"level":"info","message":"[HIT] which-module@2.0.1 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\which-module\\which-module-2.0.1.tgz","timestamp":"2025-10-17T08:54:30.131Z"}
+{"level":"info","message":"[HIT] p-try@2.2.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\p-try\\p-try-2.2.0.tgz","timestamp":"2025-10-17T08:54:30.132Z"}
+{"level":"info","message":"[HIT] color-name@1.1.4 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\color-name\\color-name-1.1.4.tgz","timestamp":"2025-10-17T08:54:30.133Z"}
+{"level":"info","message":"[HIT] path-exists@4.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\path-exists\\path-exists-4.0.0.tgz","timestamp":"2025-10-17T08:54:30.133Z"}
+{"level":"info","message":"[HIT] yargs-parser@18.1.3 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\yargs-parser\\yargs-parser-18.1.3.tgz","timestamp":"2025-10-17T08:54:30.134Z"}
+{"level":"info","message":"[HIT] locate-path@5.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\locate-path\\locate-path-5.0.0.tgz","timestamp":"2025-10-17T08:54:30.135Z"}
+{"level":"info","message":"[HIT] strip-ansi@4.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\codecache-final\\cache\\strip-ansi\\strip-ansi-4.0.0.tgz","timestamp":"2025-10-17T08:54:30.270Z"}
+{"level":"info","message":"[HIT] set-blocking@2.0.0 from C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\set-blocking\\set-blocking-2.0.0.tgz","timestamp":"2025-10-17T08:54:33.648Z"}
+{"level":"error","message":"500 - ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\set-blocking\\set-blocking-2.0.0.tgz' - /npm/set-blocking/-/set-blocking-2.0.0.tgz - GET - 10.100.255.158","timestamp":"2025-10-17T08:54:33.650Z"}
+{"level":"error","message":"Error: ENOENT: no such file or directory, open 'C:\\Users\\priya\\OneDrive\\Desktop\\CodeCache-Pro\\cache\\set-blocking\\set-blocking-2.0.0.tgz'","timestamp":"2025-10-17T08:54:33.651Z"}
