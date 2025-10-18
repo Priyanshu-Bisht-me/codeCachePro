@@ -108,7 +108,7 @@ function App() {
           </div>
         )}
         
-        {!loading && !error && (
+        {!loading && (
             <>
                 <StatsPanel stats={stats} />
                 <PackageList packages={packages} />
