@@ -4,12 +4,12 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.NODE_ENV === 'production' ? '/codecache-pro/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/codeCachePro/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    minify: 'terser'
+    minify: 'esbuild'
   },
   server: {
     host: '0.0.0.0', // Allow access from other devices
