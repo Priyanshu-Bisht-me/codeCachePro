@@ -33,12 +33,13 @@ jobs:
     - name: Install dependencies
       run: |
         cd frontend
-        npm install
+        npm ci --prefer-offline --no-audit
+        chmod +x node_modules/.bin/*
 
     - name: Build
       run: |
         cd frontend
-        npm run build
+        npx vite build
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
