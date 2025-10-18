@@ -1,90 +1,91 @@
 # 📦 CodeCache Pro
 
-**CodeCache Pro** is a production-grade, LAN-wide package caching proxy designed for Windows environments. It significantly speeds up package restoration for CI/CD pipelines and developer machines by caching `npm` and `PyPI` packages locally.
+**CodeCache Pro** is a smart tool that saves packages on your local network. It makes downloading npm and Python packages much faster for your team by storing them locally instead of downloading from the internet every time.
 
 ## 🌐 Live Demo
 
-- **Frontend Demo**: [https://YOUR_USERNAME.github.io/codecache-pro/](https://YOUR_USERNAME.github.io/codecache-pro/)
-- **Source Code**: [https://github.com/YOUR_USERNAME/codecache-pro](https://github.com/YOUR_USERNAME/codecache-pro)
+- **Website**: [https://Priyanshu-Bisht-me.github.io/codeCachePro/](https://Priyanshu-Bisht-me.github.io/codeCachePro/)
+- **Source Code**: [https://github.com/Priyanshu-Bisht-me/codeCachePro](https://github.com/Priyanshu-Bisht-me/codeCachePro)
 
-## Features ✨
+## What It Does ✨
 
--   **Multi-Registry Support**: Full support for both npm (Node.js) and PyPI (Python) package registries
--   **High-Performance Proxy**: Built with Node.js and Express, using streams for memory-efficient handling
--   **High Concurrency**: Tested to support 50+ simultaneous downloads across both registries
--   **Persistent Metadata**: Uses SQLite for fast lookups and metadata storage with registry separation
--   **Atomic & Verified Caching**: Guarantees downloads are complete and checksum-verified before being cached
--   **Automatic Cache Pruning**: Uses LRU strategy to keep cache size below configurable limit (default 5 GB)
--   **Real-time Dashboard**: React-based web UI to monitor statistics and view cached packages
--   **Console Statistics**: Real-time command-line statistics showing bandwidth and time saved
--   **Full-featured CLI**: Powerful command-line tool to manage the server
--   **Windows Service**: PowerShell scripts to install, run, and manage as a background Windows service
--   **Robust Logging**: Daily rotating logs for easy diagnostics
--   **Registry Analytics**: Separate tracking and analytics for npm and PyPI usage patterns
+-   **Works with npm and Python**: Saves packages from both npm (JavaScript) and PyPI (Python)
+-   **Fast Downloads**: Built to handle many downloads at the same time without slowing down
+-   **Smart Storage**: Uses a database to quickly find and store packages
+-   **Safe Downloads**: Checks that all packages are complete and not corrupted before saving
+-   **Auto Cleanup**: Removes old packages when storage gets full (keeps under 5 GB by default)
+-   **Web Dashboard**: Easy-to-use website to see what's cached and how much bandwidth you've saved
+-   **Live Stats**: Shows real-time info about downloads and savings
+-   **Easy Commands**: Simple commands to control the server
+-   **Windows Service**: Runs in the background on Windows like other system services
+-   **Good Logging**: Keeps daily logs to help fix any problems
+-   **Separate Tracking**: Shows separate stats for npm and Python packages
 
 ---
 
-## 🚀 Installation on Windows 10/11
+## 🚀 How to Install on Windows 10/11
 
-These steps will guide you through installing CodeCache Pro as a Windows service.
+Follow these simple steps to install CodeCache Pro on your Windows computer.
 
-### Prerequisites
+### What You Need First
 
-1.  **Node.js**: Version 18+ must be installed and available in your system's `PATH`. You can get it from [nodejs.org](https://nodejs.org/).
-2.  **Administrator Privileges**: You must run the installation script from a PowerShell terminal with Administrator rights.
+1.  **Node.js**: Download and install Node.js version 18 or newer from [nodejs.org](https://nodejs.org/)
+2.  **Admin Rights**: You need to run PowerShell as Administrator to install this
 
-### Installation Steps
+### Easy Installation Steps
 
-1.  **Download/Clone the Project**
-    Clone or download this repository to a permanent location on your server (e.g., `C:\CodeCachePro`).
+1.  **Download the Project**
+    Download or clone this project to a folder on your computer (like `C:\CodeCachePro`)
 
-2.  **Run the Installer**
-    Open **PowerShell as an Administrator**, navigate to the project's `scripts` directory, and run the installer:
+2.  **Run the Setup**
+    - Right-click on PowerShell and choose "Run as Administrator"
+    - Go to the scripts folder in the project
+    - Run the setup script:
 
     ```powershell
-    # Navigate to the scripts directory within the project
+    # Go to the scripts folder
     cd C:\Path\To\CodeCachePro\scripts
     
-    # Run the installation script
+    # Run the setup
     .\install-service.ps1
     ```
 
-    The script will automatically:
-    -   Download `NSSM` (a service manager) if it's not present.
-    -   Install all Node.js dependencies for the backend and CLI.
-    -   Link the `codecache` CLI tool globally.
-    -   Create and configure a Windows service named `CodeCachePro`.
-    -   Add a Windows Firewall rule to allow traffic on the configured port (default: `5050`).
-    -   Start the service.
+    The setup will do everything for you:
+    -   Download needed tools
+    -   Install all required files
+    -   Set up the command-line tool
+    -   Create a Windows service called `CodeCachePro`
+    -   Open the firewall for port 5050
+    -   Start the service
 
-    You should see a success message when it's done! 🥳
+    You'll see a success message when it's done! 🥳
 
 ---
 
-## 🛠️ Usage
+## 🛠️ How to Use It
 
-### Configuring Clients (npm)
+### Setting Up npm (JavaScript packages)
 
-To use the cache, configure your `npm` clients (developer machines, CI runners) to point to the CodeCache Pro server. Run this command on each client machine:
+To make npm use your cache server, run this command on each computer:
 
 ```powershell
-# Replace <server_ip> with the IP address of the machine running CodeCache Pro
+# Replace <server_ip> with your server's IP address
 npm config set registry http://<server_ip>:5050/npm
 ```
 
-### Configuring Clients (pip)
+### Setting Up pip (Python packages)
 
-To use the PyPI cache, configure your `pip` clients (developer machines, CI runners) to point to the CodeCache Pro server:
+To make Python use your cache server, run this command:
 
-**Windows/macOS/Linux:**
+**On any computer (Windows/Mac/Linux):**
 ```bash
-# Configure pip to use the cache server
+# Tell pip to use your cache server
 pip config set global.index-url http://192.168.137.47:5050/pypi
 
-# Verify the configuration
+# Check if it worked
 pip config list
 
-# To revert to the default PyPI registry
+# To go back to normal PyPI
 pip config unset global.index-url
 ```
 
@@ -111,29 +112,29 @@ pip install --index-url http://192.168.137.47:5050/pypi package_name
 ---
 
 
-## 🐍 PyPI Support
+## 🐍 Python Package Support
 
-CodeCache Pro now includes full support for Python Package Index (PyPI) caching alongside npm packages.
+CodeCache Pro works with Python packages too, not just JavaScript ones.
 
-### How PyPI Caching Works
+### How Python Caching Works
 
-1. **Package Index Requests**: When pip requests a package index (e.g., `/pypi/requests/`), the server proxies the request to the official PyPI simple index.
+1. **Finding Packages**: When pip looks for a package, the server helps it find the package on PyPI
 
-2. **Package Downloads**: When pip downloads a package file (`.whl` or `.tar.gz`), the server:
-   - Checks the local cache first
-   - If cached, serves immediately (cache HIT)
-   - If not cached, downloads from PyPI, verifies SHA256 checksum, and caches locally (cache MISS)
+2. **Downloading Packages**: When pip downloads a package file, the server:
+   - First checks if we already have it saved
+   - If yes, gives it to you right away (super fast!)
+   - If no, downloads it from PyPI, checks it's not broken, then saves it for next time
 
-3. **Checksum Verification**: All PyPI packages are verified using SHA256 checksums extracted from the PyPI index URLs.
+3. **Safety Check**: All Python packages are checked to make sure they're not corrupted
 
-4. **Atomic Caching**: Downloads are written to temporary files and atomically renamed only after successful verification.
+4. **Safe Saving**: Downloads are saved safely so they don't get corrupted
 
-### Supported Package Types
+### What Python Packages Work
 
-- **Wheel files** (`.whl`): Binary distribution format
-- **Source distributions** (`.tar.gz`): Source code archives
-- **All Python versions**: py2, py3, cp38, cp39, cp310, etc.
-- **All architectures**: any, win32, win_amd64, linux_x86_64, etc.
+- **Wheel files** (`.whl`): Pre-built packages that install quickly
+- **Source files** (`.tar.gz`): Source code that gets built during install
+- **All Python versions**: Works with Python 2, Python 3, and all versions
+- **All computers**: Works on Windows, Mac, Linux, and other systems
 
 ## 🛠️ Tech Stack
 
@@ -142,93 +143,86 @@ CodeCache Pro now includes full support for Python Package Index (PyPI) caching 
 - **CLI**: Node.js command-line interface
 - **Deployment**: GitHub Actions + Multiple hosting options
 
-### Testing PyPI Cache
+### Testing Python Cache
 
-Use the included test script to verify PyPI functionality:
-
-```bash
-cd backend
-node test-pypi-cache.js
-```
-
-Or test with real pip commands:
+You can test if Python caching works:
 
 ```bash
-# Configure pip to use the cache
+# Set up pip to use your cache
 pip config set global.index-url http://192.168.137.47:5050/pypi
 
-# Install a package (will be cached)
+# Install a package (gets saved to cache)
 pip install requests
 
-# Install again (will be served from cache)
+# Install again (comes from cache - much faster!)
 pip install --force-reinstall requests
 ```
 
-### Registry Separation
+### How Files Are Organized
 
-- npm packages are stored in `./cache/<package-name>/`
-- PyPI packages are stored in `./cache/pypi/<package-name>/`
-- Database tracks packages separately by registry type
-- Statistics show breakdown by registry (npm vs PyPI)
+- JavaScript packages go in `./cache/<package-name>/`
+- Python packages go in `./cache/pypi/<package-name>/`
+- The database keeps track of both types separately
+- Stats show how much you've saved for each type
 
 ---
 
-## 🚀 Quick Deploy Options
+## 🚀 Easy Ways to Put It Online
 
-### Option 1: Vercel (Recommended for React)
-1. Fork this repository
-2. Connect to [Vercel](https://vercel.com)
-3. Set root directory to `frontend`
-4. Deploy automatically on every push
+### Option 1: Vercel (Best for the website part)
+1. Copy this project to your GitHub
+2. Connect it to [Vercel](https://vercel.com)
+3. Set the main folder to `frontend`
+4. It will update automatically when you make changes
 
 ### Option 2: Netlify
-1. Fork this repository  
-2. Connect to [Netlify](https://netlify.com)
-3. Build settings: `frontend` directory, `npm run build`, publish `frontend/dist`
+1. Copy this project to your GitHub
+2. Connect it to [Netlify](https://netlify.com)
+3. Set it to build from `frontend` folder using `npm run build`
 
-### Option 3: Railway (Full-Stack)
-1. Fork this repository
-2. Connect to [Railway](https://railway.app)
-3. Deploys both frontend and backend together
+### Option 3: Railway (For everything together)
+1. Copy this project to your GitHub
+2. Connect it to [Railway](https://railway.app)
+3. It will put both the website and server online
 
 ### Option 4: GitHub Pages (Automatic)
-- Enabled via GitHub Actions workflow
-- Automatically deploys frontend on every push to main branch
-- Access at: `https://YOUR_USERNAME.github.io/codecache-pro/`
+- Already set up to work automatically
+- Updates the website every time you make changes
+- Visit it at: `https://Priyanshu-Bisht-me.github.io/codeCachePro/`
 
-## 💻 Local Development
+## 💻 Working on Your Computer
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/codecache-pro.git
-cd codecache-pro
+# Download the project
+git clone https://github.com/Priyanshu-Bisht-me/codeCachePro.git
+cd codeCachePro
 
-# Install backend dependencies
+# Set up the server part
 cd backend
 npm install
 
-# Install frontend dependencies  
+# Set up the website part
 cd ../frontend
 npm install
 
-# Start backend (in one terminal)
+# Start the server (in one window)
 cd ../backend
 npm run dev
 
-# Start frontend (in another terminal)
+# Start the website (in another window)
 cd ../frontend
 npm run dev
 ```
 
-## 📁 Project Structure
+## 📁 What's in the Project
 
 ```
-codecache-pro/
-├── frontend/          # React app with Vite + Tailwind CSS
-├── backend/           # Node.js Express server
-├── cli/              # Command-line interface
-├── scripts/          # Windows service installation scripts
-└── .github/workflows/ # GitHub Actions for auto-deployment
+codeCachePro/
+├── frontend/          # Website (React app)
+├── backend/           # Server (Node.js)
+├── cli/              # Command-line tools
+├── scripts/          # Windows setup scripts
+└── .github/workflows/ # Auto-deployment setup
 ```
 
 ## 🔧 Management
